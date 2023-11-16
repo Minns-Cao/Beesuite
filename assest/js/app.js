@@ -5,7 +5,7 @@ try {
             el: ".bannerTopPagination",
         },
         autoplay: {
-            delay: 5000, // Thời gian mỗi slide hiển thị trước khi chuyển slide tiếp theo (milliseconds)
+            delay: 500000, // Thời gian mỗi slide hiển thị trước khi chuyển slide tiếp theo (milliseconds)
             disableOnInteraction: false, // Không tắt autoplay khi người dùng tương tác với slider
         },
     });
@@ -39,8 +39,7 @@ try {
                 spaceBetween: 20,
             },
             640: {
-                slidesPerView: 1,
-    
+                slidesPerView: 2,
                 spaceBetween: 20,
             },
             1200: {

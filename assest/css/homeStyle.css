@@ -18,6 +18,11 @@
     width: 50%;
 }
 
+#homepage .bannerTop .sildeItem .rightSide {
+    display: flex;
+    align-items: center;
+}
+
 #homepage .bannerTop .sildeItem .rightSide img {
     width: 100%;
     object-fit: cover;
@@ -342,14 +347,81 @@
 }
 
 @media screen and (max-width: 1200px) {
-    
+    #homepage .effective .boxContent {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    #homepage .effective .boxContent .item {
+        transform: unset !important;
+    }
+    #homepage .effective .boxContent .item:nth-child(3) {
+        transform: translateX(50%) !important;
+    }
 }
 
 
 @media screen and (max-width: 768px) {
-    
+    #homepage .story .story-button-next, #homepage .story .story-button-prev {
+        display: none;
+    }
+    #homepage .effective .boxContent {
+        grid-template-columns: 70%;
+        justify-content: center;
+        gap: 40px;
+    }
+    #homepage .effective .boxContent .item:nth-child(3) {
+        transform: translateX(0%) !important;
+    }
+    #homepage .effective .boxContent .item-title {
+        padding: 40px 0;
+    }
+    #homepage .effective .boxContent .item:nth-child(1) {
+        margin-top: 80px;
+    }
+    #homepage .bannerTop .sildeItem {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    #homepage .bannerTop .sildeItem .leftSide, 
+    #homepage .bannerTop .sildeItem .rightSide {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #homepage .services .boxContent {
+        grid-template-columns: 1fr 1fr;
+    }
+    #homepage .services .buttonType1 {
+        margin: 0 auto;
+    }
+
+    #homepage .feedback .feedbackSilde .boxContent  {
+        grid-template-columns: 1fr;
+    }
+
+    #homepage .feedback .feedbackSilde .boxContent .rightSide {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #homepage .feedback .feedbackSilde .boxContent .leftSide  {
+        margin: 0 auto;
+        width: 50%;
+        border-radius: 8px;
+    }
+
+    #homepage .feedback .feedbackSilde .boxContent .leftSide img {
+        border-radius: 8px;
+    }
+
 }
 
 @media screen and (max-width: 425px) {
+    #homepage .services .boxContent {
+        grid-template-columns: 1fr;
+    }
+
     
 }
