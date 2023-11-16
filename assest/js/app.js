@@ -43,8 +43,7 @@ try {
                 spaceBetween: 20,
             },
             1200: {
-                slidesPerView: 2,
-    
+                slidesPerView: 3,
                 spaceBetween: 20,
             },
         },
