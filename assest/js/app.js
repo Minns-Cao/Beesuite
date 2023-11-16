@@ -72,6 +72,20 @@ try {
     var swiperfeedback = new Swiper(".newsCompanySilde", {
         slidesPerView: 3,
         spaceBetween: 74,
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+        },
         loop: true,
         navigation: {
             nextEl: ".company-button-next",
@@ -96,7 +110,6 @@ var swiperNewsSlider = new Swiper(".newsSlider", {
         el: ".swiper-pagination",
         clickable: true,
     },
-
     navigation: {
         nextEl: ".nextPage",
         prevEl: ".prevPage",

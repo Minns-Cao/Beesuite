@@ -352,25 +352,31 @@
         gap: 40px;
     }
     #homepage .effective .boxContent .item {
-        transform: unset !important;
+        transform: translate(0) !important;
     }
     #homepage .effective .boxContent .item:nth-child(3) {
         transform: translateX(50%) !important;
     }
-}
-
-
-@media screen and (max-width: 768px) {
-    #homepage .story .story-button-next, #homepage .story .story-button-prev {
+    #homepage .story .story-button-next,
+    #homepage .story .story-button-prev {
         display: none;
     }
+}
+
+@media screen and (max-width: 768px) {
+    
     #homepage .effective .boxContent {
         grid-template-columns: 70%;
         justify-content: center;
         gap: 40px;
     }
+    #homepage .bannerTop .sildeItem .leftSide .subtitle {
+        margin: 0 5px;
+    }
+
     #homepage .effective .boxContent .item:nth-child(3) {
         transform: translateX(0%) !important;
+        animation: unset;
     }
     #homepage .effective .boxContent .item-title {
         padding: 40px 0;
@@ -383,7 +389,7 @@
         gap: 40px;
     }
 
-    #homepage .bannerTop .sildeItem .leftSide, 
+    #homepage .bannerTop .sildeItem .leftSide,
     #homepage .bannerTop .sildeItem .rightSide {
         width: 100%;
         align-items: center;
@@ -397,7 +403,7 @@
         margin: 0 auto;
     }
 
-    #homepage .feedback .feedbackSilde .boxContent  {
+    #homepage .feedback .feedbackSilde .boxContent {
         grid-template-columns: 1fr;
     }
 
@@ -406,7 +412,7 @@
         margin: 0 auto;
     }
 
-    #homepage .feedback .feedbackSilde .boxContent .leftSide  {
+    #homepage .feedback .feedbackSilde .boxContent .leftSide {
         margin: 0 auto;
         width: 50%;
         border-radius: 8px;
@@ -416,11 +422,28 @@
         border-radius: 8px;
     }
 
+    #homepage .heading.t1 {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 425px) {
     #homepage .services .boxContent {
         grid-template-columns: 1fr;
+    }
+
+    #homepage .services .boxContent .item {
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+    }
+    #homepage .services .boxContent .item .buttonType2 {
+        margin: 0 auto;
+    }
+
+    #homepage .adminCombine .buttonType1 {
+        margin: 0 auto;
+        margin-top: 30px;
     }
 
     
