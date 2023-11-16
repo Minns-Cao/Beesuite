@@ -23,21 +23,29 @@ body {
 }
 /* ===commom== */
 .buttonType1 {
+    display: block;
     border-radius: 4px;
     background: var(--Primary-yellow, #ffcf01);
     padding: 10px 16px;
     min-width: 115px;
     width: fit-content;
-    color: var(--Primary-blue, #002559);
+    color: var(--Primary-blue, #002559) !important;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
     border: none;
+    transition: all 0.3s ease;
+}
+
+.buttonType1:hover,
+.buttonType2:hover  {
+    transform: scale(1.05);
 }
 
 .buttonType2 {
+    display: block;
     border-radius: 4px;
     border: 1px solid #2b87bb;
     width: 115px;
@@ -51,6 +59,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
 }
 
 .desc {
@@ -190,6 +199,85 @@ body {
         transform: translateY(0);
     }
 }
+
+.iconNavMb {
+    display: none;
+    fill: var(--Primary-yellow);
+}
+
+.iconNavMb svg {
+    width: 30px;
+}
+
+.mbNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    background-color: var(--color-1);
+    color: #fff;
+    z-index: 10;
+    padding: 20px 20px 0 20px;
+    transition: all 0.2s linear;
+    background-color: var(--Primary-blue);
+}
+.mbNav.active {
+    transform: translate(0);
+}
+.mbNav .line1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mbNav .line1 .btnClose svg {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+}
+
+.mbNav .socials {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.mbNav .socials .iconBox {
+    position: relative;
+    width: 20px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--color-1);
+    padding: 17px;
+}
+.mbNav .socials .iconBox i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.mbNav .line2 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mbNav .line2 a {
+    border: 2px solid #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
 /* =================Footer============ */
 footer {
     background-color: #01143f;
@@ -313,4 +401,35 @@ footer .copyright .privacy {
 
 .formContact .invalid-feedback {
     margin-top: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+    .headerBox .nav {
+        display: none;
+    }
+
+    .iconNavMb {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    footer .logoBox {
+        margin: 0 auto;
+    }
+    footer .boxContent {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    }
+    footer .boxContent .itemCol {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    footer .boxContent {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
 }

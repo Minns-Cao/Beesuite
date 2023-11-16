@@ -108,6 +108,7 @@
         linear-gradient(286deg, #01143f 43.98%, #014c8c 82.08%)
     );
     padding: 72px 0 96px;
+    overflow: hidden;
 }
 
 #homepage .services .heading.t1 {
@@ -135,6 +136,7 @@
 #homepage .effective {
     background: var(--bg-color);
     padding: 84px 0 255px;
+    overflow: hidden;
 }
 
 #homepage .effective .boxContent {
@@ -337,4 +339,17 @@
 
 #homepage .adminCombine .buttonType1 {
     margin-top: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 425px) {
+    
 }
