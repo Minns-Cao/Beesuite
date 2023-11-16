@@ -123,6 +123,16 @@ table {
     border-spacing: 0;
 }
 
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+select::-ms-expand {
+    display: none;
+}
+
+
 @media (min-width: 1400px) {
     .container {
         max-width: 1140px;

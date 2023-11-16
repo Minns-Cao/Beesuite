@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- bootstrap -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        />
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assest/css/reset.css" />
+        <!-- swiperJS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
+        <!-- icon -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <!-- commonStyle CSS -->
+        <link rel="stylesheet" href="./assest/css/commonStyle.css" />
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="./assest/css/blogStyle.css" />
+    </head>
+    <body id="blog">
+        <header class="header">
+            <div class="container headerBox">
+                <a class="logoBox" href="/">
+                    <img src="./assest/img/logo.svg" alt="" />
+                </a>
+
+                <ul class="nav">
+                    <li class="nav-item desc">
+                        <a
+                            href="#"
+                            class="nav-link desc active"
+                            aria-current="page"
+                            >Sản phẩm</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link desc">Giải pháp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link desc">Bảng giá</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link desc">Nguồn lực</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./blog.html" class="nav-link desc">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./company.html" class="nav-link desc">Công ty</a>
+                    </li>
+                    <li class="nav-button">
+                        <a href="./contact.html" class="buttonType1 buttonNav">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="notiBox">
+                <div class="container">
+                    <div class="boxContent">
+                        Cám ơn bạn đã liên hệ BeeSuite. Chuyên gia BEESUITE sẽ liên hệ bạn ngay trong 24h tới.
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="StoryBannerTop relative">
+                <div class="leftSide"></div>
+                <div class="rightSide">
+                    <img
+                        src="./assest/img/banner.png"
+                        alt=""
+                        class="bannerImg"
+                    />
+                </div>
+                <div class="content container">
+                    <p class="heading t1 uppercase" style="line-height: 54px">
+                        Câu chuyện <br />
+                        thành công
+                    </p>
+                    <p class="desc t2 text-shadow">
+                        BEESUITE cam kết chuyển hóa những mong đợi về kết quả
+                        kinh doanh của đối tác và khách hàng thành hiện thực.
+                    </p>
+                </div>
+                <div class="frame">
+                    <img src="./assest/img/frame6.svg" alt="" />
+                </div>
+            </section>
+            <section class="selectBox">
+                <div class="container">
+                    <div class="boxContent">
+                        <div class="select relative">
+                            <select>
+                                <option value="1">Ngành</option>
+                                <option value="2">Latte</option>
+                                <option value="3">Green Tea</option>
+                            </select>
+                            <img src="./assest/img/dropdown.svg" alt="" class="dropdownIcon">
+                        </div>
+                        <div class="select relative">
+                            <select>
+                                <option value="1">Giải pháp</option>
+                                <option value="2">Latte</option>
+                                <option value="3">Green Tea</option>
+                            </select>
+                            <img src="./assest/img/dropdown.svg" alt="" class="dropdownIcon">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <div class="container">
+                    <div class="swiper newsSlider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="itemList">
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img
+                                                src="./assest/img/blogpic1.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="desc subtitle blue">Bán lẻ</p>
+                                        <p class="heading t3 blue bold700">
+                                            VMG Fashion group: chuyển đổi hệ
+                                            thống, tăng quy mô
+                                        </p>
+                                        <p class="desc blue">
+                                            Beesuite tăng trải nghiệm khách
+                                            hàng, kết nối hoạt động các phóng
+                                            ban, tự động hoá quy trình, tăng khả
+                                            năng kiểm soát và doanh thu
+                                        </p>
+                                        <p class="desc date blue">20/10/2023</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img
+                                                src="./assest/img/blogpic2.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="desc subtitle blue">Bán lẻ</p>
+                                        <p class="heading t3 blue bold700">
+                                            Phúc Long: quản trị tích hợp đa ứng
+                                            dụng
+                                        </p>
+                                        <p class="desc blue">
+                                            Beesuite giúp tạo và quản lý các
+                                            chương trình bán hàng linh động theo
+                                            nhu cầu, đấu nối linh hoạt với các
+                                            đối tác khác của Phúc Long, kiểm
+                                            soát chặt tồn kho...
+                                        </p>
+                                        <p class="desc date blue">20/10/2023</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img
+                                                src="./assest/img/blogpic3.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="desc subtitle blue">Bán lẻ</p>
+                                        <p class="heading t3 blue bold700">
+                                            Phở 24: số hoá các hoạt động quản
+                                            trị
+                                        </p>
+                                        <p class="desc blue">
+                                            Trong 3 tháng, Beesuite đã liên kết
+                                            các hoạt động cung ứng từ sản xuất
+                                            đến bán hàng, giảm thiểu xử lý thủ
+                                            công
+                                        </p>
+                                        <p class="desc date blue">20/10/2023</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img
+                                                src="./assest/img/blogpic4.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="desc subtitle blue">Bán lẻ</p>
+                                        <p class="heading t3 blue bold700">
+                                            JYSK: hiện thực mô hình ERP
+                                            multi-company
+                                        </p>
+                                        <p class="desc blue">
+                                            Beesuite giúp cho thông tin dữ liệu
+                                            của JYSK được liên kết, đáo ứng cao
+                                            với các nhu cầu đặc thù của kinh
+                                            doanh, hỗ trọ dự báo nhu cầu cung
+                                            ứng.
+                                        </p>
+                                        <p class="desc date blue">20/10/2023</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img
+                                                src="./assest/img/blogpic5.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="desc subtitle blue">Bán lẻ</p>
+                                        <p class="heading t3 blue bold700">
+                                            Metro Mart: ROI thu hồi ngay sau vài
+                                            cửa hàng đầu tiên
+                                        </p>
+                                        <p class="desc blue">
+                                            3 tháng triển khai ứng dụng Beesuite
+                                            Retail tích hợp đa nghiệp vụ cho 30
+                                            cửa hàng với 15,000 giao dịch/ ngày.
+                                            Khả năng kiểm soát chống thát thoát
+                                            tôt.
+                                        </p>
+                                        <p class="desc date blue">20/10/2023</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img
+                                                src="./assest/img/blogpic1.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="desc subtitle blue">
+                                            Bán lẻ | Sản xuất
+                                        </p>
+                                        <p class="heading t3 blue bold700">
+                                            Liên Á: Quản lý nhân sự, kết nối
+                                            nhân viên
+                                        </p>
+                                        <p class="desc blue">
+                                            Quản lý thông tin nhân viên, tự động
+                                            hoá các quy trình nhân sự chính tro
+                                            ng 4 tháng với 700 nhân viên cho 16
+                                            cửa hàng và 2 nhà máy.
+                                        </p>
+                                        <p class="desc date blue">20/10/2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="itemList">
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img
+                                                src="./assest/img/blogpic1.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="desc subtitle blue">Bán lẻ</p>
+                                        <p class="heading t3 blue bold700">
+                                            VMG Fashion group: chuyển đổi hệ
+                                            thống, tăng quy mô
+                                        </p>
+                                        <p class="desc blue">
+                                            Beesuite tăng trải nghiệm khách
+                                            hàng, kết nối hoạt động các phóng
+                                            ban, tự động hoá quy trình, tăng khả
+                                            năng kiểm soát và doanh thu
+                                        </p>
+                                        <p class="desc date blue">20/10/2023</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img
+                                                src="./assest/img/blogpic1.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="desc subtitle blue">Bán lẻ</p>
+                                        <p class="heading t3 blue bold700">
+                                            VMG Fashion group: chuyển đổi hệ
+                                            thống, tăng quy mô
+                                        </p>
+                                        <p class="desc blue">
+                                            Beesuite tăng trải nghiệm khách
+                                            hàng, kết nối hoạt động các phóng
+                                            ban, tự động hoá quy trình, tăng khả
+                                            năng kiểm soát và doanh thu
+                                        </p>
+                                        <p class="desc date blue">20/10/2023</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img
+                                                src="./assest/img/blogpic1.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="desc subtitle blue">Bán lẻ</p>
+                                        <p class="heading t3 blue bold700">
+                                            VMG Fashion group: chuyển đổi hệ
+                                            thống, tăng quy mô
+                                        </p>
+                                        <p class="desc blue">
+                                            Beesuite tăng trải nghiệm khách
+                                            hàng, kết nối hoạt động các phóng
+                                            ban, tự động hoá quy trình, tăng khả
+                                            năng kiểm soát và doanh thu
+                                        </p>
+                                        <p class="desc date blue">20/10/2023</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img
+                                                src="./assest/img/blogpic1.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="desc subtitle blue">Bán lẻ</p>
+                                        <p class="heading t3 blue bold700">
+                                            VMG Fashion group: chuyển đổi hệ
+                                            thống, tăng quy mô
+                                        </p>
+                                        <p class="desc blue">
+                                            Beesuite tăng trải nghiệm khách
+                                            hàng, kết nối hoạt động các phóng
+                                            ban, tự động hoá quy trình, tăng khả
+                                            năng kiểm soát và doanh thu
+                                        </p>
+                                        <p class="desc date blue">20/10/2023</p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="thumb">
+                                            <img
+                                                src="./assest/img/blogpic1.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <p class="desc subtitle blue">Bán lẻ</p>
+                                        <p class="heading t3 blue bold700">
+                                            VMG Fashion group: chuyển đổi hệ
+                                            thống, tăng quy mô
+                                        </p>
+                                        <p class="desc blue">
+                                            Beesuite tăng trải nghiệm khách
+                                            hàng, kết nối hoạt động các phóng
+                                            ban, tự động hoá quy trình, tăng khả
+                                            năng kiểm soát và doanh thu
+                                        </p>
+                                        <p class="desc date blue">20/10/2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttonBox">
+                            <button class="prevPage">
+                                <img
+                                    src="./assest/img/prev.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                                trang trước
+                            </button>
+                            <button class="nextPage">
+                                trang sau
+                                <img
+                                    src="./assest/img/next.svg"
+                                    alt=""
+                                    class="icon"
+                                />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contactProfessor">
+                <div class="container">
+                    <p class="heading t1 uppercase">
+                        Liện hệ chuyên gia <span class="yellow">BEE</span>SUITE
+                    </p>
+                    <p class="desc labelHeaing">
+                        BEESUITE cần một vài thông tin dưới đây để kết nối bạn
+                        đến đúng chuyên gia
+                    </p>
+                    <form class="formContact" novalidate>
+                        <div class="rowForm">
+                            <div class="inputBox">
+                                <label for="name" class="form-label"
+                                    >Tên của bạn *</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Nhập tên"
+                                    id="name"
+                                />
+                            </div>
+                            <div class="inputBox">
+                                <label for="company" class="form-label"
+                                    >Công ty *</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Nhập tên công ty"
+                                    id="company"
+                                />
+                            </div>
+                        </div>
+                        <div class="rowForm">
+                            <div class="inputBox">
+                                <label for="phone" class="form-label"
+                                    >Số điện thoại *</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Nhập số điện thoại"
+                                    id="phone"
+                                />
+                            </div>
+                            <div class="inputBox">
+                                <label for="major" class="form-label"
+                                    >Ngành/ lĩnh vực</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Nhập ngành/ lĩnh vực của công ty bạn"
+                                    id="major"
+                                />
+                            </div>
+                        </div>
+                        <div class="rowForm">
+                            <div class="inputBox">
+                                <div class="">
+                                    <label for="email" class="form-label"
+                                    >Email *</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Nhập email"
+                                    id="email"
+                                />
+                                </div>
+
+                                <div class="form-check">
+                                    <input
+                                        type="checkbox"
+                                        class="form-check-input"
+                                        id="confirm1"
+                                    />
+                                    <label
+                                        class="form-check-label"
+                                        for="confirm1"
+                                        >Tôi xác nhận BEESUITE có thể sử dụng những thông tin trên đây để liên hệ kết nối với tôi*</label
+                                    >
+                                </div>
+                                <div class="form-check">
+                                    <input
+                                        type="checkbox"
+                                        class="form-check-input"
+                                        id="confirm2"
+                                    />
+                                    <label
+                                        class="form-check-label"
+                                        for="confirm2"
+                                        >Tôi muốn nhận những thông tin cập nhật mới nhất về sản phẩm, giải pháp, xu hướng thị trường từ BEESUITE</label
+                                    >
+                                </div>
+                            </div>
+                            <div class="inputBox">
+                                <label for="message" class="form-label"
+                                    >Beesuite có thể giúp gì cho bạn</label
+                                >
+                                <textarea
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Nhập câu hỏi/ chia sẻ mà bạn cần chuyên gia tư vấn"
+                                    id="message"
+                                    rows="9"
+                                ></textarea>
+                            </div>
+                        </div>
+                        <button class="buttonType1" type="submit">Gửi</button>
+                    </form>
+                    
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="logoBox">
+                    <img src="./assest/img/BescoLogo.png" alt="" />
+                </div>
+                <div class="boxContent">
+                    <div class="itemCol">
+                        <p class="desc">
+                            50 Cuu Long Str.,Ward 2, Tan Binh Dist.,
+                        </p>
+                        <p class="desc">HCM City, Vietnam</p>
+                        <p class="desc">028 6281 5988</p>
+                        <p class="desc">Canh@besco.vn</p>
+                        <div class="socialsBox">
+                            <a href="#!" class="social">
+                                <img src="./assest/img/logo_in.svg" alt="" />
+                            </a>
+                            <a href="#!" class="social">
+                                <img
+                                    src="./assest/img/logo_twitter.svg"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="#!" class="social">
+                                <img src="./assest/img/logo_ytb.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="itemCol">
+                        <a href="#!" class="desc">Trang chủ</a>
+                        <a href="#!" class="desc">Sản phẩm</a>
+                        <a href="#!" class="desc">Giải pháp</a>
+                    </div>
+                    <div class="itemCol">
+                        <a href="#!" class="desc">Bảng giá</a>
+                        <a href="#!" class="desc">Nguồn lực</a>
+                        <a href="#!" class="desc">Blog</a>
+                    </div>
+                    <div class="itemCol">
+                        <a href="#!" class="desc">Về chúng tôi</a>
+                        <a href="#!" class="desc">NEWS</a>
+                        <a href="#!" class="desc">CAREERS</a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p class="desc">Copyright 1994-2003 MISA JSC</p>
+                    <p class="desc privacy">Thoả thuận sử dụng</p>
+                    <p class="desc privacy">Chính sách bảo mật</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="./assest/js/app.js"></script>
+    </body>
+</html>
