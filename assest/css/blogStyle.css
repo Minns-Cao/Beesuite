@@ -291,7 +291,9 @@
         gap: 50px;
     }
 
-   
+    #companyPage .details {
+        padding: 120px 10px;
+    }
 }
 
 @media screen and (max-width: 425px) {

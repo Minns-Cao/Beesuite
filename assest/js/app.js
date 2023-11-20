@@ -16,7 +16,7 @@ try {
 try {
     var swiperfeedback = new Swiper(".feedback", {
         loop: true,
-       
+
         pagination: {
             el: ".feedbackPagination",
         },
@@ -32,7 +32,7 @@ try {
 try {
     var swiperStorySlide = new Swiper(".storySilde", {
         slidesPerView: 3,
-        spaceBetween: 74, 
+        spaceBetween: 74,
         breakpoints: {
             320: {
                 slidesPerView: 1,
@@ -178,13 +178,16 @@ const clearMsg = () => {
 };
 
 let mbNav = document.querySelector(".mbNav");
-let iconNavMb = document.querySelector(".iconNavMb").addEventListener("click",event => {
-    mbNav.classList.add("active");
-})
-let btnClose = document.querySelector(".btnClose").addEventListener("click",event => {
-    mbNav.classList.remove("active");
-})
-
+let iconNavMb = document
+    .querySelector(".iconNavMb")
+    .addEventListener("click", (event) => {
+        mbNav.classList.add("active");
+    });
+let btnClose = document
+    .querySelector(".btnClose")
+    .addEventListener("click", (event) => {
+        mbNav.classList.remove("active");
+    });
 
 if (document.querySelector(".formContact")) {
     document
@@ -244,4 +247,121 @@ if (document.querySelector(".formContact")) {
                 showNoti();
             }
         });
+}
+
+function animateNumber(
+    finalNumber,
+    duration = 5000,
+    startNumber = 0,
+    callback
+) {
+    const startTime = performance.now();
+    function updateNumber(currentTime) {
+        const elapsedTime = currentTime - startTime;
+        if (elapsedTime > duration) {
+            callback(finalNumber);
+        } else {
+            const rate = elapsedTime / duration;
+            const currentNumber = Math.round(rate * finalNumber);
+            callback(currentNumber);
+            requestAnimationFrame(updateNumber);
+        }
+    }
+    requestAnimationFrame(updateNumber);
+}
+
+function editString(string) {
+    return string.split(",").join("");
+}
+
+let cuahang = document.querySelector(".cuahang");
+let nguoidung = document.querySelector(".nguoidung");
+let sanpham = document.querySelector(".sanpham");
+let phattrien = document.querySelector(".phattrien");
+
+if (cuahang && nguoidung && sanpham && phattrien) {
+    animateNumber(
+        Number(editString(cuahang.innerHTML)).toFixed(0),
+        3000,
+        0,
+        function (number) {
+            const formattedNumber = number.toLocaleString();
+            cuahang.innerText = formattedNumber;
+        }
+    );
+
+    animateNumber(
+        Number(editString(nguoidung.innerHTML)),
+        3000,
+        0,
+        function (number) {
+            const formattedNumber = number.toLocaleString();
+            nguoidung.innerText = formattedNumber;
+        }
+    );
+    animateNumber(
+        Number(editString(sanpham.innerHTML)),
+        3000,
+        0,
+        function (number) {
+            const formattedNumber = number.toLocaleString();
+            sanpham.innerText = formattedNumber;
+        }
+    );
+    animateNumber(
+        Number(editString(phattrien.innerHTML)),
+        3000,
+        0,
+        function (number) {
+            const formattedNumber = number.toLocaleString();
+            phattrien.innerText = formattedNumber;
+        }
+    );
+}
+
+let animationElm1 = document.querySelector(".animationElm1");
+let animationElm2 = document.querySelector(".animationElm2");
+let animationElm3 = document.querySelector(".animationElm3");
+let animationElm4 = document.querySelector(".animationElm4");
+
+console.log(animationElm1, animationElm2, animationElm3, animationElm4);
+console.log(animationElm1 && animationElm2 && animationElm3 && animationElm4);
+
+if (animationElm1 && animationElm2 && animationElm3 && animationElm4) {
+    animateNumber(
+        Number(editString(animationElm1.innerHTML)).toFixed(0),
+        3000,
+        0,
+        function (number) {
+            const formattedNumber = number.toLocaleString();
+            animationElm1.innerText = formattedNumber;
+        }
+    );
+    animateNumber(
+        Number(editString(animationElm2.innerHTML)).toFixed(0),
+        3000,
+        0,
+        function (number) {
+            const formattedNumber = number.toLocaleString();
+            animationElm2.innerText = formattedNumber;
+        }
+    );
+    animateNumber(
+        Number(editString(animationElm3.innerHTML)).toFixed(0),
+        1000,
+        0,
+        function (number) {
+            const formattedNumber = number.toLocaleString();
+            animationElm3.innerText = formattedNumber;
+        }
+    );
+    animateNumber(
+        Number(editString(animationElm4.innerHTML)).toFixed(0),
+        2000,
+        0,
+        function (number) {
+            const formattedNumber = number.toLocaleString();
+            animationElm4.innerText = formattedNumber;
+        }
+    );
 }
