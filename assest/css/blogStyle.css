@@ -294,6 +294,17 @@
     #companyPage .details {
         padding: 120px 10px;
     }
+    
+    .news,
+    .contactProfessor,
+    #companyPage .details,
+    #companyPage .newsBox {
+        padding: 40px 0;
+    }
+
+    .contactProfessor .labelHeaing {
+        padding: 18px 0;
+    }
 }
 
 @media screen and (max-width: 425px) {

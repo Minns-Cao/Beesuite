@@ -428,6 +428,21 @@
     #homepage .heading.t1 {
         text-align: center;
     }
+
+    #homepage .bannerTop .sildeItem {
+        padding: 40px 0;
+    }
+
+    #homepage .effective .boxContent .item:nth-child(1) {
+        margin-top: 20px;
+    }
+
+    #homepage .effective,
+    #homepage .adminCombine,
+    #homepage .story {
+        padding: 40px 0;
+    }
+
 }
 
 @media screen and (max-width: 425px) {
