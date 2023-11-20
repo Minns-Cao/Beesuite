@@ -274,94 +274,134 @@ function editString(string) {
     return string.split(",").join("");
 }
 
-let cuahang = document.querySelector(".cuahang");
-let nguoidung = document.querySelector(".nguoidung");
-let sanpham = document.querySelector(".sanpham");
-let phattrien = document.querySelector(".phattrien");
+function isElementInViewport(el) {
+    let viewportHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+    let viewportWidth =
+        window.innerWidth || document.documentElement.clientWidth;
 
-if (cuahang && nguoidung && sanpham && phattrien) {
-    animateNumber(
-        Number(editString(cuahang.innerHTML)).toFixed(0),
-        3000,
-        0,
-        function (number) {
-            const formattedNumber = number.toLocaleString();
-            cuahang.innerText = formattedNumber;
-        }
-    );
+    let rect = el.getBoundingClientRect();
+    let elementTop = rect.top;
+    let elementLeft = rect.left;
+    let elementBottom = rect.bottom;
+    let elementRight = rect.right;
 
-    animateNumber(
-        Number(editString(nguoidung.innerHTML)),
-        3000,
-        0,
-        function (number) {
-            const formattedNumber = number.toLocaleString();
-            nguoidung.innerText = formattedNumber;
-        }
-    );
-    animateNumber(
-        Number(editString(sanpham.innerHTML)),
-        3000,
-        0,
-        function (number) {
-            const formattedNumber = number.toLocaleString();
-            sanpham.innerText = formattedNumber;
-        }
-    );
-    animateNumber(
-        Number(editString(phattrien.innerHTML)),
-        3000,
-        0,
-        function (number) {
-            const formattedNumber = number.toLocaleString();
-            phattrien.innerText = formattedNumber;
-        }
-    );
+    let isElementInViewport =
+        elementBottom > 0 &&
+        elementTop < viewportHeight &&
+        elementRight > 0 &&
+        elementLeft < viewportWidth;
+
+    return isElementInViewport;
 }
 
-let animationElm1 = document.querySelector(".animationElm1");
-let animationElm2 = document.querySelector(".animationElm2");
-let animationElm3 = document.querySelector(".animationElm3");
-let animationElm4 = document.querySelector(".animationElm4");
+let isRun = false;
 
-console.log(animationElm1, animationElm2, animationElm3, animationElm4);
-console.log(animationElm1 && animationElm2 && animationElm3 && animationElm4);
+window.addEventListener("scroll", () => {
+    let animationElm1 = document.querySelector(".animationElm1");
+    let animationElm2 = document.querySelector(".animationElm2");
+    let animationElm3 = document.querySelector(".animationElm3");
+    let animationElm4 = document.querySelector(".animationElm4");
+    let parentElement = document.querySelector(".effective");
 
-if (animationElm1 && animationElm2 && animationElm3 && animationElm4) {
-    animateNumber(
-        Number(editString(animationElm1.innerHTML)).toFixed(0),
-        3000,
-        0,
-        function (number) {
-            const formattedNumber = number.toLocaleString();
-            animationElm1.innerText = formattedNumber;
-        }
-    );
-    animateNumber(
-        Number(editString(animationElm2.innerHTML)).toFixed(0),
-        3000,
-        0,
-        function (number) {
-            const formattedNumber = number.toLocaleString();
-            animationElm2.innerText = formattedNumber;
-        }
-    );
-    animateNumber(
-        Number(editString(animationElm3.innerHTML)).toFixed(0),
-        1000,
-        0,
-        function (number) {
-            const formattedNumber = number.toLocaleString();
-            animationElm3.innerText = formattedNumber;
-        }
-    );
-    animateNumber(
-        Number(editString(animationElm4.innerHTML)).toFixed(0),
-        2000,
-        0,
-        function (number) {
-            const formattedNumber = number.toLocaleString();
-            animationElm4.innerText = formattedNumber;
-        }
-    );
-}
+    if (
+        animationElm1 &&
+        animationElm2 &&
+        animationElm3 &&
+        animationElm4 &&
+        !isRun &&
+        isElementInViewport(parentElement)
+    ) {
+        isRun = true;
+        animateNumber(
+            Number(editString(animationElm1.innerHTML)).toFixed(0),
+            3000,
+            0,
+            function (number) {
+                const formattedNumber = number.toLocaleString();
+                animationElm1.innerText = formattedNumber;
+            }
+        );
+        animateNumber(
+            Number(editString(animationElm2.innerHTML)).toFixed(0),
+            3000,
+            0,
+            function (number) {
+                const formattedNumber = number.toLocaleString();
+                animationElm2.innerText = formattedNumber;
+            }
+        );
+        animateNumber(
+            Number(editString(animationElm3.innerHTML)).toFixed(0),
+            1000,
+            0,
+            function (number) {
+                const formattedNumber = number.toLocaleString();
+                animationElm3.innerText = formattedNumber;
+            }
+        );
+        animateNumber(
+            Number(editString(animationElm4.innerHTML)).toFixed(0),
+            2000,
+            0,
+            function (number) {
+                const formattedNumber = number.toLocaleString();
+                animationElm4.innerText = formattedNumber;
+            }
+        );
+    }
+
+    let cuahang = document.querySelector(".cuahang");
+    let nguoidung = document.querySelector(".nguoidung");
+    let sanpham = document.querySelector(".sanpham");
+    let phattrien = document.querySelector(".phattrien");
+    let parentElement2 = document.querySelector(".details")
+
+    if (
+        cuahang &&
+        nguoidung &&
+        sanpham &&
+        phattrien &&
+        !isRun &&
+        isElementInViewport(parentElement2)
+    ) {
+        isRun = true;
+        animateNumber(
+            Number(editString(cuahang.innerHTML)).toFixed(0),
+            3000,
+            0,
+            function (number) {
+                const formattedNumber = number.toLocaleString();
+                cuahang.innerText = formattedNumber;
+            }
+        );
+
+        animateNumber(
+            Number(editString(nguoidung.innerHTML)),
+            3000,
+            0,
+            function (number) {
+                const formattedNumber = number.toLocaleString();
+                nguoidung.innerText = formattedNumber;
+            }
+        );
+        animateNumber(
+            Number(editString(sanpham.innerHTML)),
+            3000,
+            0,
+            function (number) {
+                const formattedNumber = number.toLocaleString();
+                sanpham.innerText = formattedNumber;
+            }
+        );
+        animateNumber(
+            Number(editString(phattrien.innerHTML)),
+            3000,
+            0,
+            function (number) {
+                const formattedNumber = number.toLocaleString();
+                phattrien.innerText = formattedNumber;
+            }
+        );
+    }
+});
