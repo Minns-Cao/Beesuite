@@ -352,6 +352,36 @@ footer .copyright .privacy {
     margin-top: 48px;
 }
 
+.formContact {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "nameBox companyBox"
+    "phoneBox majorBox"
+    "emailBox mesBox"
+    "confirm1Box mesBox"
+    "confirm2Box mesBox";
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+}
+
+.formContact .inputBox {
+    margin-top: 30px;
+}
+
+.formContact > div {
+    width: 100%;
+}
+
+.formContact .nameBox { grid-area: nameBox;}
+.formContact .companyBox { grid-area: companyBox;}
+.formContact .phoneBox { grid-area: phoneBox;}
+.formContact .majorBox { grid-area: majorBox;}
+.formContact .emailBox { grid-area: emailBox;}
+.formContact .confirm1Box { grid-area: confirm1Box;}
+.formContact .confirm2Box { grid-area: confirm2Box;}
+.formContact .mesBox { grid-area: mesBox;}
+
 .formContact .rowForm {
     margin-top: 48px;
     display: grid;
@@ -431,6 +461,19 @@ footer .copyright .privacy {
 
 
 @media screen and (max-width: 768px) {
+    .formContact {
+        grid-template-areas: 
+        "nameBox"
+        "phoneBox"
+        "emailBox"
+        "companyBox"
+        "majorBox"
+        "mesBox"
+        "confirm1Box"
+        "confirm2Box";
+        grid-template-columns: 1fr;
+    }
+
     footer .logoBox {
         margin: 0 auto;
     }

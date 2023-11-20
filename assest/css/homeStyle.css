@@ -355,6 +355,7 @@
     }
     #homepage .effective .boxContent .item {
         transform: translate(0) !important;
+        animation: unset !important;
     }
     #homepage .effective .boxContent .item:nth-child(3) {
         transform: translateX(50%) !important;

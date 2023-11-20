@@ -239,14 +239,28 @@
 
 @media screen and (max-width: 768px) {
     .StoryBannerTop {
-        height: 400px;
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+    }
+
+    #contact .StoryBannerTop .frame {
+        opacity: 0.4;
+    }
+
+    .StoryBannerTop .content {
+        top: -25%;
+    }
+
+    .StoryBannerTop .leftSide, .StoryBannerTop .rightSide {
+        height: 50%;
     }
 
     .StoryBannerTop .content .heading {
-        width: 90%;
+        width: 100%;
     }
     .StoryBannerTop .content .desc {
-        width: 90%;
+        width: 100%;
     }
     .selectBox .boxContent {
         grid-template-columns: 1fr 1fr;
@@ -281,6 +295,15 @@
 }
 
 @media screen and (max-width: 425px) {
+    .heading.t1 {
+        font-size: 40px;
+    }
+    .heading.t3 {
+        font-size: 18px;
+    }
+    .StoryBannerTop {
+        height: 800px;
+    }
     .selectBox .boxContent {
         gap: 20px;
         grid-template-columns: 1fr;
