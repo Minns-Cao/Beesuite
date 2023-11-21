@@ -274,6 +274,9 @@
 #homepage .feedback .feedbackPagination .swiper-pagination-bullet-active {
     background-color: #8a93a0;
 }
+#homepage .bannerTop .swiper-pagination-bullet-active {
+    background-color: #06DAFF;
+}
 
 /* story */
 #homepage .story {
@@ -363,6 +366,13 @@
     #homepage .story .story-button-next,
     #homepage .story .story-button-prev {
         display: none;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    #homepage .feedback .feedbackPagination {
+        bottom: var(--swiper-pagination-bottom,28px);
+        left: 0;
     }
 }
 
