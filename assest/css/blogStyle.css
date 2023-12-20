@@ -1,331 +1,440 @@
 /* StoryBannerTop */
 .StoryBannerTop {
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: linear-gradient(254deg, #101b2f 47.22%, #002559 81.82%);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(254deg, #101b2f 47.22%, #002559 81.82%);
 }
 
 .StoryBannerTop .leftSide,
 .StoryBannerTop .rightSide {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .StoryBannerTop .bannerImg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    mix-blend-mode: color-dodge;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: color-dodge;
 }
 
 .StoryBannerTop .desc a {
-    color: #fff;
-    font-weight: 700;
+  color: #fff;
+  font-weight: 700;
 }
 
 .StoryBannerTop .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .StoryBannerTop .content .heading {
-    width: 500px;
-    line-height: 48px;
+  width: 500px;
+  line-height: 48px;
 }
 
 .StoryBannerTop .content .desc {
-    width: 500px;
-    margin-top: 32px;
+  width: 500px;
+  margin-top: 32px;
 }
 
 .StoryBannerTop .frame {
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
 }
 
 .StoryBannerTop .frame img {
-    height: 100%;
-    object-fit: cover;
+  height: 100%;
+  object-fit: cover;
 }
 
 #contact .StoryBannerTop .frame {
-    left: 70%;
-    height: 100%;
-    transform: translate(-50%, -50%);
+  left: 70%;
+  height: 100%;
+  transform: translate(-50%, -50%);
 }
 
 /* selectBox */
 .selectBox {
-    background: var(--Primary-blue, #002559);
-    padding: 48px 0 56px;
+  background: var(--Primary-blue, #002559);
+  padding: 48px 0 56px;
 }
 
 .selectBox .boxContent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 78px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 78px;
 }
 
 .selectBox .select select {
-    background-color: transparent;
-    padding: 12px 16px;
-    width: 340px;
-    border-radius: 4px;
-    border: 1px solid #fff;
-    color: #fff;
+  background-color: transparent;
+  padding: 12px 16px;
+  width: 340px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 .selectBox .select .dropdownIcon {
-    position: absolute;
-    top: 50%;
-    right: 3%;
-    transform: translate(-50%, -50%);
-    z-index: 4;
-    user-select: none;
-    pointer-events: none;
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  user-select: none;
+  pointer-events: none;
 }
 
 /* news */
 .news {
-    padding: 120px 0 80px;
+  padding: 120px 0 80px;
 }
 
 .news .itemList {
-    width: 100%;
-    display: grid;
-    gap: 78px;
-    grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  display: grid;
+  gap: 78px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .news .item {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
 }
 
 .news .item .thumb {
-    width: 100%;
-    aspect-ratio: 1/0.9;
+  width: 100%;
+  aspect-ratio: 1/0.9;
 }
 
 .news .item .thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .news .item .desc.date {
-    margin-top: auto;
-    color: #97999c;
+  margin-top: auto;
+  color: #97999c;
 }
 
 .news .buttonBox {
-    margin-top: 48px;
-    display: flex;
+  margin-top: 48px;
+  display: flex;
 
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .news .prevPage,
 .news .nextPage {
-    border: none;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    color: var(--Blue-text);
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  color: var(--Blue-text);
 }
 
 #companyPage .details {
-    padding: 120px 80px;
+  padding: 120px 80px;
 }
 
 #companyPage .details .listItem {
-    margin: 48px 0 96px;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-between;
-    align-content: space-between;
+  margin: 48px 0 96px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 #companyPage .details .item {
-    color: var(--Blue-text);
+  color: var(--Blue-text);
 }
 
 #companyPage .details .item .number {
-    color: #01143f;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 90px; /* 112.5% */
-    text-align: center;
-    margin-bottom: 16px;
+  color: #01143f;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90px; /* 112.5% */
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 #companyPage .details .item .label {
-    text-align: center;
-    color: #01143f;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 100% */
+  text-align: center;
+  color: #01143f;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 100% */
 }
 
 #companyPage .newsBox {
-    padding: 0px 0 80px;
+  padding: 0px 0 80px;
 }
 
 #companyPage .newsBox .item {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
 }
 
 #companyPage .newsBox .item .thumb {
-    width: 100%;
+  width: 100%;
 }
 
 #companyPage .newsBox .item .thumb img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 #companyPage .newsBox .company-button-next,
 #companyPage .newsBox .company-button-prev {
-    position: absolute;
-    top: 50%;
-    width: 80px;
-    z-index: 2;
+  position: absolute;
+  top: 50%;
+  width: 80px;
+  z-index: 2;
 }
 #companyPage .newsBox .company-button-next img,
 #companyPage .newsBox .company-button-prev img {
-    width: 100%;
+  width: 100%;
 }
 
 #companyPage .newsBox .company-button-next {
-    right: -80px;
+  right: -80px;
 }
 #companyPage .newsBox .company-button-prev {
-    left: -80px;
+  left: -80px;
+}
+
+.boxImg_giaiphap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.boxImg_giaiphap img {
+  width: 70%;
+  object-fit: contain;
+}
+
+.thachthucList li {
+  list-style-position: inside;
+  list-style-type: circle;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.achiveBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 70px;
+  row-gap: 48px;
+}
+
+.achiveBox .item h3 {
+  color: #002559;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.achiveBox .item h4 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 12px;
+}
+
+.achiveBox .item ol li {
+  list-style-position: inside;
+  list-style-type: decimal;
+  line-height: 24px;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.feedback .boxContent {
+    margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.feedback .boxContent .leftSide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.feedback .boxContent .leftSide img {
+  width: 25%;
+  min-width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback .boxContent .rightSide {
+  width: 60%;
+}
+
+.feedback .boxContent .rightSide i {
+  display: block;
+  font-style: italic;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#companyPage.phuclong .StoryBannerTop {
+    display: flex !important;
+    flex-direction: row-reverse;
+}
+
+#companyPage.phuclong .StoryBannerTop .bannerImg {
+    mix-blend-mode: unset;
+}
+
+#companyPage.phuclong .StoryBannerTop .content {
+    left: 90%;
 }
 
 @media screen and (max-width: 1200px) {
-    #companyPage .details .listItem {
-        grid-template-columns: auto auto;
-        justify-content: space-around;
-    }
-    #companyPage .newsBox .company-button-next , #companyPage .newsBox .company-button-prev {
-        display: none;
-    }
+  #companyPage .details .listItem {
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+  }
+  #companyPage .newsBox .company-button-next,
+  #companyPage .newsBox .company-button-prev {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 992px) {
-    .formContact .rowForm {
-        gap: 20px;
-    }
-    
+  .formContact .rowForm {
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .StoryBannerTop {
-        display: flex;
-        flex-direction: column;
-        height: 600px;
-    }
+  .StoryBannerTop {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+  }
 
-    #contact .StoryBannerTop .frame {
-        opacity: 0.4;
-    }
+  #contact .StoryBannerTop .frame {
+    opacity: 0.4;
+  }
 
-    .StoryBannerTop .content {
-        top: -25%;
-    }
+  .StoryBannerTop .content {
+    top: -25%;
+  }
 
-    .StoryBannerTop .leftSide, .StoryBannerTop .rightSide {
-        height: 50%;
-    }
+  .StoryBannerTop .leftSide,
+  .StoryBannerTop .rightSide {
+    height: 50%;
+  }
 
-    .StoryBannerTop .content .heading {
-        width: 100%;
-    }
-    .StoryBannerTop .content .desc {
-        width: 100%;
-    }
-    .selectBox .boxContent {
-        grid-template-columns: 1fr 1fr;
-    }
+  .StoryBannerTop .content .heading {
+    width: 100%;
+  }
+  .StoryBannerTop .content .desc {
+    width: 100%;
+  }
+  .selectBox .boxContent {
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .selectBox .select select {
-        width: 100%;
-    }
+  .selectBox .select select {
+    width: 100%;
+  }
 
-    .news .itemList {
-        grid-template-columns: 1fr 1fr;
-        column-gap: 20px;
-    }
+  .news .itemList {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
 
-    .formContact .rowForm {
-        margin-top: 20px;
-        gap: 20px;
-        grid-template-columns: 1fr;
-    }
+  .formContact .rowForm {
+    margin-top: 20px;
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
 
-    .formContact .rowForm:nth-child(3) {
-        display: flex;
-        flex-direction: column-reverse;
-    }
+  .formContact .rowForm:nth-child(3) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
-    #companyPage .details .listItem {
-        grid-template-columns: auto;
-        gap: 50px;
-    }
+  #companyPage .details .listItem {
+    grid-template-columns: auto;
+    gap: 50px;
+  }
 
-    #companyPage .details {
-        padding: 120px 10px;
-    }
-    
-    .news,
-    .contactProfessor,
-    #companyPage .details,
-    #companyPage .newsBox {
-        padding: 40px 0;
-    }
+  #companyPage .details {
+    padding: 120px 10px;
+  }
 
-    .contactProfessor .labelHeaing {
-        padding: 18px 0;
-    }
+  .news,
+  .contactProfessor,
+  #companyPage .details,
+  #companyPage .newsBox {
+    padding: 40px 0;
+  }
+
+  .contactProfessor .labelHeaing {
+    padding: 18px 0;
+  }
+
+  .achiveBox {
+    grid-template-columns: 1fr;
+  }
+
+  .boxImg_giaiphap img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .feedback .boxContent .rightSide {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 425px) {
-    .heading.t1 {
-        font-size: 40px;
-    }
-    .heading.t3 {
-        font-size: 18px;
-    }
-    .StoryBannerTop {
-        height: 800px;
-    }
-    .selectBox .boxContent {
-        gap: 20px;
-        grid-template-columns: 1fr;
-    }
-    .news .itemList {
-        column-gap: 10px;
-        row-gap: 30px;
-    }
-    .news .itemList .item .sumary {
-        display: none;
-    }
+  .heading.t1 {
+    font-size: 40px;
+  }
+  .heading.t3 {
+    font-size: 18px;
+  }
+  .StoryBannerTop {
+    height: 800px;
+  }
+  .selectBox .boxContent {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .news .itemList {
+    column-gap: 10px;
+    row-gap: 30px;
+  }
+  .news .itemList .item .sumary {
+    display: none;
+  }
 }

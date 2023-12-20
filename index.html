@@ -1,689 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <!-- bootstrap -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-        />
-        <!-- Reset CSS -->
-        <link rel="stylesheet" href="./assest/css/reset.css" />
-        <!-- swiperJS -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-        />
-        <!-- icon -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./assest/css/reset.css" />
+    <!-- swiperJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-        <script src="https://unpkg.com/scrollreveal@4"></script>
-        <!-- commonStyle CSS -->
-        <link rel="stylesheet" href="./assest/css/commonStyle.css" />
-        <!-- Style CSS -->
-        <link rel="stylesheet" href="./assest/css/homeStyle.css" />
-    </head>
-    <body id="homepage">
-        <header class="header">
-            <div class="container headerBox">
-                <a class="logoBox" href="/">
-                    <img src="./assest/img/logo.svg" alt="" />
-                </a>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <!-- commonStyle CSS -->
+    <link rel="stylesheet" href="./assest/css/commonStyle.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assest/css/homeStyle.css" />
+  </head>
+  <body id="homepage">
+    <header class="header">
+      <div class="container headerBox">
+        <a class="logoBox" href="/">
+          <img src="./assest/img/logo.svg" alt="" />
+        </a>
 
-                <ul class="nav">
-                    <li class="nav-item desc">
-                        <a
-                            href="#"
-                            class="nav-link desc active"
-                            aria-current="page"
-                            >Sản phẩm</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link desc">Giải pháp</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link desc">Bảng giá</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link desc">Nguồn lực</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./blog.html" class="nav-link desc">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./company.html" class="nav-link desc"
-                            >Công ty</a
-                        >
-                    </li>
-                    <li class="nav-button">
-                        <a href="./contact.html" class="buttonType1 buttonNav"
-                            >Liên hệ</a
-                        >
-                    </li>
+        <ul class="nav">
+          <li class="nav-item desc">
+            <a href="#" class="nav-link desc active" aria-current="page"
+              >Sản phẩm</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link desc">Giải pháp</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link desc">Bảng giá</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link desc">Nguồn lực</a>
+          </li>
+          <li class="nav-item">
+            <a href="./blog.html" class="nav-link desc">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="./company.html" class="nav-link desc">Công ty</a>
+          </li>
+          <li class="nav-button">
+            <a href="./contact.html" class="buttonType1 buttonNav">Liên hệ</a>
+          </li>
+        </ul>
+        <div class="iconNavMb">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="mbNav">
+        <div class="line1">
+          <div class="socials">
+            <p class="lang">vi</p>
+            <div class="iconBox">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="iconBox">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="iconBox">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+          <div class="btnClose">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 384 512"
+            >
+              <path
+                d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="line2">
+          <a href="#!">Sản phẩm</a>
+          <a href="#!">Giải pháp</a>
+          <a href="#!">Bảng giá</a>
+          <a href="#!">Nguồn lực</a>
+
+          <a href="./blog.html" class="nav-link desc">Blog</a>
+
+          <a href="./company.html" class="nav-link desc">Công ty</a>
+
+          <a
+            href="./contact.html"
+            style="margin: 0 auto"
+            class="buttonType1 buttonNav"
+            >Liên hệ</a
+          >
+        </div>
+      </div>
+      <div class="notiBox">
+        <div class="container">
+          <div class="boxContent">
+            Cám ơn bạn đã liên hệ BeeSuite. Chuyên gia BEESUITE sẽ liên hệ bạn
+            ngay trong 24h tới.
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="swiper bannerTop">
+        <div class="swiper-wrapper">
+          <div class="bannerTop swiper-slide">
+            <div class="sildeItem container">
+              <div class="leftSide">
+                <p class="subtitle uppercase">
+                  Bộ ứng dụng quản trị kinh doanh trên đám mây
+                  <span class="yellow">BEE</span>SUITE
+                </p>
+                <p class="title">Đa tích hợp</p>
+                <ul class="listChannel">
+                  <li class="channel active">Ommi Channel</li>
+                  <li class="channel">ERP</li>
+                  <li class="channel">Accounting</li>
+                  <li class="channel">CRM</li>
+                  <li class="channel">HCM</li>
+                  <li class="channel">Collaboration</li>
                 </ul>
-                <div class="iconNavMb">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512"
-                    >
-                        <path
-                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-                        />
-                    </svg>
+                <a href="#!" class="buttonType1">Xem demo</a>
+              </div>
+              <div class="rightSide">
+                <div class="frame">
+                  <img src="./assest/img/frame1.svg" alt="" />
                 </div>
+              </div>
             </div>
-            <div class="mbNav">
-                <div class="line1">
-                    <div class="socials">
-                        <p class="lang">vi</p>
-                        <div class="iconBox">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-                        <div class="iconBox">
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                        <div class="iconBox">
-                            <i class="fa-brands fa-youtube"></i>
-                        </div>
-                    </div>
-                    <div class="btnClose">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="1em"
-                            viewBox="0 0 384 512"
-                        >
-                            <path
-                                d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
-                            />
-                        </svg>
-                    </div>
+          </div>
+          <div
+            class="bannerTop swiper-slide"
+            style="
+              background: radial-gradient(
+                113.48% 27.25% at 25.07% 53.09%,
+                #005091 6.99%,
+                #00143f 98.64%
+              );
+            "
+          >
+            <div class="sildeItem container">
+              <div class="leftSide">
+                <p class="subtitle uppercase">
+                  Bộ ứng dụng quản trị kinh doanh trên đám mây
+                </p>
+                <p class="title">THÍCH ỨNG MỌI QUY MÔ TĂNG TRƯỞNG</p>
+                <a href="#!" class="buttonType1">Xem demo</a>
+              </div>
+              <div class="rightSide">
+                <div class="frame">
+                  <img src="./assest/img/Frame 32.svg" alt="" />
                 </div>
-                <div class="line2">
-                    <a href="#!">Sản phẩm</a>
-                    <a href="#!">Giải pháp</a>
-                    <a href="#!">Bảng giá</a>
-                    <a href="#!">Nguồn lực</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination bannerTopPagination"></div>
+      </div>
+      <section class="clientBanner">
+        <div class="boxScroll">
+          <!-- line -->
+          <div class="clientLogoBox">
+            <img src="./assest/img/client1.svg" alt="" class="clientLogo" />
+          </div>
+          <div class="clientLogoBox">
+            <img src="./assest/img/client2.svg" alt="" class="clientLogo" />
+          </div>
+          <div class="clientLogoBox">
+            <img src="./assest/img/client3.svg" alt="" class="clientLogo" />
+          </div>
+          <div class="clientLogoBox">
+            <img src="./assest/img/client4.svg" alt="" class="clientLogo" />
+          </div>
+          <div class="clientLogoBox">
+            <img src="./assest/img/client5.svg" alt="" class="clientLogo" />
+          </div>
+          <div class="clientLogoBox">
+            <img src="./assest/img/client6.svg" alt="" class="clientLogo" />
+          </div>
+          <!-- line -->
+          <div class="clientLogoBox">
+            <img src="./assest/img/client1.svg" alt="" class="clientLogo" />
+          </div>
+          <div class="clientLogoBox">
+            <img src="./assest/img/client2.svg" alt="" class="clientLogo" />
+          </div>
+          <div class="clientLogoBox">
+            <img src="./assest/img/client3.svg" alt="" class="clientLogo" />
+          </div>
+          <div class="clientLogoBox">
+            <img src="./assest/img/client4.svg" alt="" class="clientLogo" />
+          </div>
+          <div class="clientLogoBox">
+            <img src="./assest/img/client5.svg" alt="" class="clientLogo" />
+          </div>
+          <div class="clientLogoBox">
+            <img src="./assest/img/client6.svg" alt="" class="clientLogo" />
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <p class="heading t1">SẢN PHẨM</p>
+          <div class="boxContent">
+            <div class="item">
+              <a href="#!" class="heading t3">ERP</a>
+              <p class="desc">
+                Specialize in turning innovative ideas into profitable products,
+                providing the very best-in-class solutions to meet your needs.
+              </p>
+              <a href="#!" class="buttonType2">TÌM HIỂU</a>
+            </div>
+            <div class="item">
+              <a href="#!" class="heading t3">OMNI CHANNEL</a>
+              <p class="desc">
+                Specialize in turning innovative ideas into profitable products,
+                providing the very best-in-class solutions to meet your needs.
+              </p>
+              <a href="#!" class="buttonType2">TÌM HIỂU</a>
+            </div>
+            <div class="item">
+              <a href="#!" class="heading t3">CRM</a>
+              <p class="desc">
+                Specialize in turning innovative ideas into profitable products,
+                providing the very best-in-class solutions to meet your needs.
+              </p>
+              <a href="#!" class="buttonType2">TÌM HIỂU</a>
+            </div>
+            <div class="item">
+              <a href="#!" class="heading t3">KẾ TOÁN</a>
+              <p class="desc">
+                Specialize in turning innovative ideas into profitable products,
+                providing the very best-in-class solutions to meet your needs.
+              </p>
+              <a href="#!" class="buttonType2">TÌM HIỂU</a>
+            </div>
+            <div class="item">
+              <a href="#!" class="heading t3">HCM - QUẢN LÝ NHÂN SỰ</a>
+              <p class="desc">
+                Specialize in turning innovative ideas into profitable products,
+                providing the very best-in-class solutions to meet your needs.
+              </p>
+              <a href="#!" class="buttonType2">TÌM HIỂU</a>
+            </div>
+            <div class="item">
+              <a href="#!" class="heading t3">HỢP TÁc</a>
+              <p class="desc">
+                Specialize in turning innovative ideas into profitable products,
+                providing the very best-in-class solutions to meet your needs.
+              </p>
+              <a href="#!" class="buttonType2">TÌM HIỂU</a>
+            </div>
+          </div>
+          <a href="#!" class="buttonType1">Gặp chuyên gia</a>
+        </div>
+      </section>
+      <section class="effective">
+        <div class="container">
+          <p class="heading t1 uppercase">Hiệu quả vượt trội</p>
+          <div class="boxContent">
+            <div class="item">
+              <div class="item-title">
+                <span class="add">+</span><span class="animationElm1">30</span
+                ><span class="percent">%</span>
+                <img src="./assest/img/frame3.svg" alt="" class="bg-img" />
+              </div>
+              <p class="heading t2 uppercase">Tăng lợi nhuận</p>
+              <p class="desc">
+                Tự động hoá giúp ra quyết định kịp thời, kết nối các bộ phận
+                chức năng, đồng thời giảm thiểu chi phí vận hành.
+              </p>
+            </div>
+            <div class="item">
+              <div class="item-title">
+                <span class="add">+</span><span class="animationElm2">38</span
+                ><span class="percent">%</span>
+                <img src="./assest/img/frame4.svg" alt="" class="bg-img" />
+              </div>
+              <p class="heading t2 uppercase">TĂNG HIỆU QUẢ TƯƠNG TÁC</p>
+              <p class="desc">
+                Tối ưu hoá trải nghiệm khách hàng,  tăng tương tác, đột phá
+                trong kết quả kinh doanh
+              </p>
+            </div>
+            <div class="item">
+              <div class="item-title">
+                <span class="animationElm3">1</span><span class="add">-</span
+                ><span class="animationElm4">3</span>
+                <span class="label">tháng</span>
+                <img src="./assest/img/frame5.svg" alt="" class="bg-img" />
+              </div>
+              <p class="heading t2 uppercase">TRIỂN KHAI NHANH</p>
+              <p class="desc">
+                Thời gian triển khai nhanh gọn, linh hoạt, tập trung để tăng
+                hiệu quả kinh doanh trong thời gian sớm nhất, dù là phát triển
+                hệ thống mới  hay chuyển đổi, nâng cấp hệ thống
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="swiper feedback">
+        <div class="swiper-wrapper">
+          <div class="feedbackSilde swiper-slide">
+            <div class="boxContent container">
+              <div class="leftSide">
+                <img src="./assest/img/hinhavata.png" alt="" class="thumb" />
+              </div>
+              <div class="rightSide">
+                <p class="name heading t3 bold700 blue">
+                  Chị VÕ PHẠM PHƯƠNG TÂM
+                </p>
+                <p class="job desc bold700 blue pb-2">OWNER & CEO VMG</p>
+                <p class="cmt desc blue">
+                  “Chân thành cảm ơn sự nỗ lực của Sếp Cảnh, các leader và anh
+                  em Besco và anh chị em VMG giúp chúng ta đi qua chặng đường
+                  thuận lợi và đạt được cột mốc thành tích của 18 tháng bước đầu
+                  hôm nay. Tâm và VMG vui mừng và vững tâm vì có sự hỗ trợ luôn
+                  luôn hết mình của tập thể Besco. Chúc cho chặng đường sắp tới
+                  VMG tiếp tục đồng hành cùng BeeSuite của Besco luôn nhiều
+                  thuận lợi và may mắn, cùng nhau phát triển và hoàn thiện.” 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feedbackSilde swiper-slide">
+            <div class="boxContent container">
+              <div class="leftSide">
+                <img src="./assest/img/hinhavata.png" alt="" class="thumb" />
+              </div>
+              <div class="rightSide">
+                <p class="name heading t3 bold700 blue">
+                  Chị VÕ PHẠM PHƯƠNG TÂM 2
+                </p>
+                <p class="job desc bold700 blue pb-2">OWNER & CEO VMG</p>
+                <p class="cmt desc blue">
+                  “Chân thành cảm ơn sự nỗ lực của Sếp Cảnh, các leader và anh
+                  em Besco và anh chị em VMG giúp chúng ta đi qua chặng đường
+                  thuận lợi và đạt được cột mốc thành tích của 18 tháng bước đầu
+                  hôm nay. Tâm và VMG vui mừng và vững tâm vì có sự hỗ trợ luôn
+                  luôn hết mình của tập thể Besco. Chúc cho chặng đường sắp tới
+                  VMG tiếp tục đồng hành cùng BeeSuite của Besco luôn nhiều
+                  thuận lợi và may mắn, cùng nhau phát triển và hoàn thiện.” 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feedbackSilde swiper-slide">
+            <div class="boxContent container">
+              <div class="leftSide">
+                <img src="./assest/img/hinhavata.png" alt="" class="thumb" />
+              </div>
+              <div class="rightSide">
+                <p class="name heading t3 bold700 blue">
+                  Chị VÕ PHẠM PHƯƠNG TÂM 3
+                </p>
+                <p class="job desc bold700 blue pb-2">OWNER & CEO VMG</p>
+                <p class="cmt desc blue">
+                  “Chân thành cảm ơn sự nỗ lực của Sếp Cảnh, các leader và anh
+                  em Besco và anh chị em VMG giúp chúng ta đi qua chặng đường
+                  thuận lợi và đạt được cột mốc thành tích của 18 tháng bước đầu
+                  hôm nay. Tâm và VMG vui mừng và vững tâm vì có sự hỗ trợ luôn
+                  luôn hết mình của tập thể Besco. Chúc cho chặng đường sắp tới
+                  VMG tiếp tục đồng hành cùng BeeSuite của Besco luôn nhiều
+                  thuận lợi và may mắn, cùng nhau phát triển và hoàn thiện.” 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination feedbackPagination"></div>
+      </div>
+      <section class="story">
+        <div class="container relative">
+          <p class="heading t1 uppercase">Câu chuyện thành công</p>
+          <div class="swiper storySilde">
+            <div class="swiper-wrapper listItem">
+              <div class="swiper-slide item">
+                <a href="#!" class="thumb">
+                  <img src="./assest/img/pic1.png" alt="" />
+                </a>
+                <a href="#!" class="heading t3">VMG FASHION GROUP</a>
+                <div class="desc">
+                  Specialize in turning innovative ideas into profitable
+                  products, providing the very best-in-class solutions to meet
+                  your needs.
+                </div>
+                <a href="#!" class="buttonType2 uppercase">More</a>
+              </div>
+              <div class="swiper-slide item">
+                <a href="#!" class="thumb">
+                  <img src="./assest/img/pic2.png" alt="" />
+                </a>
+                <a href="#!" class="heading t3">PHUC LONG</a>
+                <div class="desc">
+                  Specialize in turning innovative ideas into profitable
+                  products, providing the very best-in-class solutions to meet
+                  your needs.
+                </div>
+                <a href="#!" class="buttonType2 uppercase">More</a>
+              </div>
+              <div class="swiper-slide item">
+                <a href="#!" class="thumb">
+                  <img src="./assest/img/pic3.png" alt="" />
+                </a>
+                <a href="#!" class="heading t3">THACO AGRI</a>
+                <div class="desc">
+                  Specialize in turning innovative ideas into profitable
+                  products, providing the very best-in-class solutions to meet
+                  your needs.
+                </div>
+                <a href="#!" class="buttonType2 uppercase">More</a>
+              </div>
+              <div class="swiper-slide item">
+                <a href="#!" class="thumb">
+                  <img src="./assest/img/pic2.png" alt="" />
+                </a>
+                <a href="#!" class="heading t3">VMG FASHION GROUP</a>
+                <div class="desc">
+                  Specialize in turning innovative ideas into profitable
+                  products, providing the very best-in-class solutions to meet
+                  your needs.
+                </div>
+                <a href="#!" class="buttonType2 uppercase">More</a>
+              </div>
+              <div class="swiper-slide item">
+                <a href="#!" class="thumb">
+                  <img src="./assest/img/pic3.png" alt="" />
+                </a>
+                <a href="#!" class="heading t3">THACO AGRI</a>
+                <div class="desc">
+                  Specialize in turning innovative ideas into profitable
+                  products, providing the very best-in-class solutions to meet
+                  your needs.
+                </div>
+                <a href="#!" class="buttonType2 uppercase">More</a>
+              </div>
+            </div>
+          </div>
+          <div class="story-button-next">
+            <img src="./assest/img/next.svg" alt="" />
+          </div>
+          <div class="story-button-prev">
+            <img src="./assest/img/prev.svg" alt="" />
+          </div>
+          <a href="#!" class="buttonType1">LÊN KẾ HOẠCH CHO THÀNH CÔNG</a>
+        </div>
+      </section>
+      <section class="adminCombine">
+        <div class="container">
+          <p class="heading t1 uppercase">quản trị tích hợp ngay</p>
+          <a href="#!" class="buttonType1">Gặp Chuyên gia</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="logoBox">
+          <img src="./assest/img/BescoLogo.png" alt="" />
+        </div>
+        <div class="boxContent">
+          <ul class="itemCol">
+            <li>
+              <p>50 Cuu Long Str.,Ward 2, Tan Binh Dist.,</p>
+            </li>
+            <li><p>HCM City, Vietnam</p></li>
+            <li>
+              <a href="tel:028 6281 5988">028 6281 5988</a>
+            </li>
+            <li>
+              <a href="mailto:Canh@besco.vn">Canh@besco.vn</a>
+            </li>
+            <li>
+              <div class="socialsBox">
+                <a href="#!" class="social">
+                  <img src="./assest/img/logo_in.svg" alt="" />
+                </a>
+                <a href="#!" class="social">
+                  <img src="./assest/img/logo_twitter.svg" alt="" />
+                </a>
+                <a href="#!" class="social">
+                  <img src="./assest/img/logo_ytb.svg" alt="" />
+                </a>
+              </div>
+            </li>
+          </ul>
+          <ul class="itemCol">
+            <li><a href="#!">Trang chủ</a></li>
+            <li><a href="#!">Sản phẩm</a></li>
+            <li><a href="#!">Giải pháp</a></li>
+          </ul>
+          <ul class="itemCol">
+            <li><a href="#!">Bảng giá</a></li>
+            <li><a href="#!">Nguồn lực</a></li>
+            <li><a href="#!">Blog</a></li>
+          </ul>
+          <ul class="itemCol">
+            <li><a href="#!">Về chúng tôi</a></li>
+            <li><a href="#!">NEWS</a></li>
+            <li><a href="#!">CAREERS</a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p class="desc">Copyright 1994-2003 MISA JSC</p>
+          <a href="#!" class="desc privacy">Thoả thuận sử dụng</a>
+          <a href="#!" class="desc privacy">Chính sách bảo mật</a>
+        </div>
+      </div>
+    </footer>
+    <mesBox>
+      <a href="./contact.html">
+        <svg
+        width="72"
+        height="66"
+        viewBox="0 0 72 66"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 20C0 8.95431 8.95431 0 20 0H52C63.0457 0 72 8.95431 72 20V66H20C8.95431 66 0 57.0457 0 46V20Z"
+          fill="#FFCF01"
+        />
+        <g opacity="0.8">
+          <path
+            d="M46 27H28M46 35H28M46 43H36M16 33C16 44.046 24.954 53 36 53H56V33C56 21.954 47.046 13 36 13C24.954 13 16 21.954 16 33Z"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+      </a>
+    </mesBox>
 
-                    <a href="./blog.html" class="nav-link desc">Blog</a>
-
-                    <a href="./company.html" class="nav-link desc">Công ty</a>
-
-                    <a
-                        href="./contact.html"
-                        style="margin: 0 auto"
-                        class="buttonType1 buttonNav"
-                        >Liên hệ</a
-                    >
-                </div>
-            </div>
-            <div class="notiBox">
-                <div class="container">
-                    <div class="boxContent">
-                        Cám ơn bạn đã liên hệ BeeSuite. Chuyên gia BEESUITE sẽ
-                        liên hệ bạn ngay trong 24h tới.
-                    </div>
-                </div>
-            </div>
-        </header>
-        <main>
-            <div class="swiper bannerTop">
-                <div class="swiper-wrapper">
-                    <div class="bannerTop swiper-slide">
-                        <div class="sildeItem container">
-                            <div class="leftSide">
-                                <p class="subtitle uppercase">
-                                    Bộ ứng dụng quản trị kinh doanh trên đám mây
-                                    <span class="yellow">BEE</span>SUITE
-                                </p>
-                                <p class="title">Đa tích hợp</p>
-                                <ul class="listChannel">
-                                    <li class="channel active">Ommi Channel</li>
-                                    <li class="channel">ERP</li>
-                                    <li class="channel">Accounting</li>
-                                    <li class="channel">CRM</li>
-                                    <li class="channel">HCM</li>
-                                    <li class="channel">Collaboration</li>
-                                </ul>
-                                <a href="#!" class="buttonType1">Xem demo</a>
-                            </div>
-                            <div class="rightSide">
-                                <div class="frame">
-                                    <img src="./assest/img/frame1.svg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="bannerTop swiper-slide"
-                        style="
-                            background: radial-gradient(
-                                113.48% 27.25% at 25.07% 53.09%,
-                                #005091 6.99%,
-                                #00143f 98.64%
-                            );
-                        "
-                    >
-                        <div class="sildeItem container">
-                            <div class="leftSide">
-                                <p class="subtitle uppercase">
-                                    Bộ ứng dụng quản trị kinh doanh trên đám mây
-                                </p>
-                                <p class="title">
-                                    THÍCH ỨNG MỌI QUY MÔ TĂNG TRƯỞNG
-                                </p>
-                                <a href="#!" class="buttonType1">Xem demo</a>
-                            </div>
-                            <div class="rightSide">
-                                <div class="frame">
-                                    <img
-                                        src="./assest/img/Frame 32.svg"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination bannerTopPagination"></div>
-            </div>
-            <section class="clientBanner">
-                <div class="boxScroll">
-                    <!-- line -->
-                    <div class="clientLogoBox">
-                        <img
-                            src="./assest/img/client1.svg"
-                            alt=""
-                            class="clientLogo"
-                        />
-                    </div>
-                    <div class="clientLogoBox">
-                        <img
-                            src="./assest/img/client2.svg"
-                            alt=""
-                            class="clientLogo"
-                        />
-                    </div>
-                    <div class="clientLogoBox">
-                        <img
-                            src="./assest/img/client3.svg"
-                            alt=""
-                            class="clientLogo"
-                        />
-                    </div>
-                    <div class="clientLogoBox">
-                        <img
-                            src="./assest/img/client4.svg"
-                            alt=""
-                            class="clientLogo"
-                        />
-                    </div>
-                    <div class="clientLogoBox">
-                        <img
-                            src="./assest/img/client5.svg"
-                            alt=""
-                            class="clientLogo"
-                        />
-                    </div>
-                    <div class="clientLogoBox">
-                        <img
-                            src="./assest/img/client6.svg"
-                            alt=""
-                            class="clientLogo"
-                        />
-                    </div>
-                    <!-- line -->
-                    <div class="clientLogoBox">
-                        <img
-                            src="./assest/img/client1.svg"
-                            alt=""
-                            class="clientLogo"
-                        />
-                    </div>
-                    <div class="clientLogoBox">
-                        <img
-                            src="./assest/img/client2.svg"
-                            alt=""
-                            class="clientLogo"
-                        />
-                    </div>
-                    <div class="clientLogoBox">
-                        <img
-                            src="./assest/img/client3.svg"
-                            alt=""
-                            class="clientLogo"
-                        />
-                    </div>
-                    <div class="clientLogoBox">
-                        <img
-                            src="./assest/img/client4.svg"
-                            alt=""
-                            class="clientLogo"
-                        />
-                    </div>
-                    <div class="clientLogoBox">
-                        <img
-                            src="./assest/img/client5.svg"
-                            alt=""
-                            class="clientLogo"
-                        />
-                    </div>
-                    <div class="clientLogoBox">
-                        <img
-                            src="./assest/img/client6.svg"
-                            alt=""
-                            class="clientLogo"
-                        />
-                    </div>
-                </div>
-            </section>
-            <section class="services">
-                <div class="container">
-                    <p class="heading t1">SẢN PHẨM</p>
-                    <div class="boxContent">
-                        <div class="item">
-                            <a href="#!" class="heading t3">ERP</a>
-                            <p class="desc">
-                                Specialize in turning innovative ideas into
-                                profitable products, providing the very
-                                best-in-class solutions to meet your needs.
-                            </p>
-                            <a href="#!" class="buttonType2">TÌM HIỂU</a>
-                        </div>
-                        <div class="item">
-                            <a href="#!" class="heading t3">OMNI CHANNEL</a>
-                            <p class="desc">
-                                Specialize in turning innovative ideas into
-                                profitable products, providing the very
-                                best-in-class solutions to meet your needs.
-                            </p>
-                            <a href="#!" class="buttonType2">TÌM HIỂU</a>
-                        </div>
-                        <div class="item">
-                            <a href="#!" class="heading t3">CRM</a>
-                            <p class="desc">
-                                Specialize in turning innovative ideas into
-                                profitable products, providing the very
-                                best-in-class solutions to meet your needs.
-                            </p>
-                            <a href="#!" class="buttonType2">TÌM HIỂU</a>
-                        </div>
-                        <div class="item">
-                            <a href="#!" class="heading t3">KẾ TOÁN</a>
-                            <p class="desc">
-                                Specialize in turning innovative ideas into
-                                profitable products, providing the very
-                                best-in-class solutions to meet your needs.
-                            </p>
-                            <a href="#!" class="buttonType2">TÌM HIỂU</a>
-                        </div>
-                        <div class="item">
-                            <a href="#!" class="heading t3"
-                                >HCM - QUẢN LÝ NHÂN SỰ</a
-                            >
-                            <p class="desc">
-                                Specialize in turning innovative ideas into
-                                profitable products, providing the very
-                                best-in-class solutions to meet your needs.
-                            </p>
-                            <a href="#!" class="buttonType2">TÌM HIỂU</a>
-                        </div>
-                        <div class="item">
-                            <a href="#!" class="heading t3">HỢP TÁc</a>
-                            <p class="desc">
-                                Specialize in turning innovative ideas into
-                                profitable products, providing the very
-                                best-in-class solutions to meet your needs.
-                            </p>
-                            <a href="#!" class="buttonType2">TÌM HIỂU</a>
-                        </div>
-                    </div>
-                    <a href="#!" class="buttonType1">Gặp chuyên gia</a>
-                </div>
-            </section>
-            <section class="effective">
-                <div class="container">
-                    <p class="heading t1 uppercase">Hiệu quả vượt trội</p>
-                    <div class="boxContent">
-                        <div class="item">
-                            <div class="item-title">
-                                <span class="add">+</span><span class="animationElm1">30</span><span
-                                    class="percent"
-                                    >%</span
-                                >
-                                <img
-                                    src="./assest/img/frame3.svg"
-                                    alt=""
-                                    class="bg-img"
-                                />
-                            </div>
-                            <p class="heading t2 uppercase">Tăng lợi nhuận</p>
-                            <p class="desc">
-                                Tự động hoá giúp ra quyết định kịp thời, kết nối
-                                các bộ phận chức năng, đồng thời giảm thiểu chi
-                                phí vận hành.
-                            </p>
-                        </div>
-                        <div class="item">
-                            <div class="item-title">
-                                <span class="add">+</span><span class="animationElm2">38</span><span
-                                    class="percent"
-                                    >%</span
-                                >
-                                <img
-                                    src="./assest/img/frame4.svg"
-                                    alt=""
-                                    class="bg-img"
-                                />
-                            </div>
-                            <p class="heading t2 uppercase">
-                                TĂNG HIỆU QUẢ TƯƠNG TÁC
-                            </p>
-                            <p class="desc">
-                                Tối ưu hoá trải nghiệm khách hàng,  tăng tương
-                                tác, đột phá trong kết quả kinh doanh
-                            </p>
-                        </div>
-                        <div class="item">
-                            <div class="item-title">
-                                <span class="animationElm3">1</span><span class="add">-</span><span class="animationElm4">3</span>
-                                <span class="label"
-                                    >tháng</span
-                                >
-                                <img
-                                    src="./assest/img/frame5.svg"
-                                    alt=""
-                                    class="bg-img"
-                                />
-                            </div>
-                            <p class="heading t2 uppercase">TRIỂN KHAI NHANH</p>
-                            <p class="desc">
-                                Thời gian triển khai nhanh gọn, linh hoạt, tập
-                                trung để tăng hiệu quả kinh doanh trong thời
-                                gian sớm nhất, dù là phát triển hệ thống mới
-                                 hay chuyển đổi, nâng cấp hệ thống
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="swiper feedback">
-                <div class="swiper-wrapper">
-                    <div class="feedbackSilde swiper-slide">
-                        <div class="boxContent container">
-                            <div class="leftSide">
-                                <img
-                                    src="./assest/img/hinhavata.png"
-                                    alt=""
-                                    class="thumb"
-                                />
-                            </div>
-                            <div class="rightSide">
-                                <p class="name heading t3 bold700 blue">
-                                    Chị VÕ PHẠM PHƯƠNG TÂM
-                                </p>
-                                <p class="job desc bold700 blue pb-2">
-                                    OWNER & CEO VMG
-                                </p>
-                                <p class="cmt desc blue">
-                                    “Chân thành cảm ơn sự nỗ lực của Sếp Cảnh,
-                                    các leader và anh em Besco và anh chị em VMG
-                                    giúp chúng ta đi qua chặng đường thuận lợi
-                                    và đạt được cột mốc thành tích của 18 tháng
-                                    bước đầu hôm nay. Tâm và VMG vui mừng và
-                                    vững tâm vì có sự hỗ trợ luôn luôn hết mình
-                                    của tập thể Besco. Chúc cho chặng đường sắp
-                                    tới VMG tiếp tục đồng hành cùng BeeSuite của
-                                    Besco luôn nhiều thuận lợi và may mắn, cùng
-                                    nhau phát triển và hoàn thiện.” 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="feedbackSilde swiper-slide">
-                        <div class="boxContent container">
-                            <div class="leftSide">
-                                <img
-                                    src="./assest/img/hinhavata.png"
-                                    alt=""
-                                    class="thumb"
-                                />
-                            </div>
-                            <div class="rightSide">
-                                <p class="name heading t3 bold700 blue">
-                                    Chị VÕ PHẠM PHƯƠNG TÂM 2
-                                </p>
-                                <p class="job desc bold700 blue pb-2">
-                                    OWNER & CEO VMG
-                                </p>
-                                <p class="cmt desc blue">
-                                    “Chân thành cảm ơn sự nỗ lực của Sếp Cảnh,
-                                    các leader và anh em Besco và anh chị em VMG
-                                    giúp chúng ta đi qua chặng đường thuận lợi
-                                    và đạt được cột mốc thành tích của 18 tháng
-                                    bước đầu hôm nay. Tâm và VMG vui mừng và
-                                    vững tâm vì có sự hỗ trợ luôn luôn hết mình
-                                    của tập thể Besco. Chúc cho chặng đường sắp
-                                    tới VMG tiếp tục đồng hành cùng BeeSuite của
-                                    Besco luôn nhiều thuận lợi và may mắn, cùng
-                                    nhau phát triển và hoàn thiện.” 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="feedbackSilde swiper-slide">
-                        <div class="boxContent container">
-                            <div class="leftSide">
-                                <img
-                                    src="./assest/img/hinhavata.png"
-                                    alt=""
-                                    class="thumb"
-                                />
-                            </div>
-                            <div class="rightSide">
-                                <p class="name heading t3 bold700 blue">
-                                    Chị VÕ PHẠM PHƯƠNG TÂM 3
-                                </p>
-                                <p class="job desc bold700 blue pb-2">
-                                    OWNER & CEO VMG
-                                </p>
-                                <p class="cmt desc blue">
-                                    “Chân thành cảm ơn sự nỗ lực của Sếp Cảnh,
-                                    các leader và anh em Besco và anh chị em VMG
-                                    giúp chúng ta đi qua chặng đường thuận lợi
-                                    và đạt được cột mốc thành tích của 18 tháng
-                                    bước đầu hôm nay. Tâm và VMG vui mừng và
-                                    vững tâm vì có sự hỗ trợ luôn luôn hết mình
-                                    của tập thể Besco. Chúc cho chặng đường sắp
-                                    tới VMG tiếp tục đồng hành cùng BeeSuite của
-                                    Besco luôn nhiều thuận lợi và may mắn, cùng
-                                    nhau phát triển và hoàn thiện.” 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination feedbackPagination"></div>
-            </div>
-            <section class="story">
-                <div class="container relative">
-                    <p class="heading t1 uppercase">Câu chuyện thành công</p>
-                    <div class="swiper storySilde">
-                        <div class="swiper-wrapper listItem">
-                            <div class="swiper-slide item">
-                                <a href="#!" class="thumb">
-                                    <img src="./assest/img/pic1.png" alt="" />
-                                </a>
-                                <a href="#!" class="heading t3"
-                                    >VMG FASHION GROUP</a
-                                >
-                                <div class="desc">
-                                    Specialize in turning innovative ideas into
-                                    profitable products, providing the very
-                                    best-in-class solutions to meet your needs.
-                                </div>
-                                <a href="#!" class="buttonType2 uppercase"
-                                    >More</a
-                                >
-                            </div>
-                            <div class="swiper-slide item">
-                                <a href="#!" class="thumb">
-                                    <img src="./assest/img/pic2.png" alt="" />
-                                </a>
-                                <a href="#!" class="heading t3">PHUC LONG</a>
-                                <div class="desc">
-                                    Specialize in turning innovative ideas into
-                                    profitable products, providing the very
-                                    best-in-class solutions to meet your needs.
-                                </div>
-                                <a href="#!" class="buttonType2 uppercase"
-                                    >More</a
-                                >
-                            </div>
-                            <div class="swiper-slide item">
-                                <a href="#!" class="thumb">
-                                    <img src="./assest/img/pic3.png" alt="" />
-                                </a>
-                                <a href="#!" class="heading t3">THACO AGRI</a>
-                                <div class="desc">
-                                    Specialize in turning innovative ideas into
-                                    profitable products, providing the very
-                                    best-in-class solutions to meet your needs.
-                                </div>
-                                <a href="#!" class="buttonType2 uppercase"
-                                    >More</a
-                                >
-                            </div>
-                            <div class="swiper-slide item">
-                                <a href="#!" class="thumb">
-                                    <img src="./assest/img/pic2.png" alt="" />
-                                </a>
-                                <a href="#!" class="heading t3"
-                                    >VMG FASHION GROUP</a
-                                >
-                                <div class="desc">
-                                    Specialize in turning innovative ideas into
-                                    profitable products, providing the very
-                                    best-in-class solutions to meet your needs.
-                                </div>
-                                <a href="#!" class="buttonType2 uppercase"
-                                    >More</a
-                                >
-                            </div>
-                            <div class="swiper-slide item">
-                                <a href="#!" class="thumb">
-                                    <img src="./assest/img/pic3.png" alt="" />
-                                </a>
-                                <a href="#!" class="heading t3">THACO AGRI</a>
-                                <div class="desc">
-                                    Specialize in turning innovative ideas into
-                                    profitable products, providing the very
-                                    best-in-class solutions to meet your needs.
-                                </div>
-                                <a href="#!" class="buttonType2 uppercase"
-                                    >More</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="story-button-next">
-                        <img src="./assest/img/next.svg" alt="" />
-                    </div>
-                    <div class="story-button-prev">
-                        <img src="./assest/img/prev.svg" alt="" />
-                    </div>
-                    <a href="#!" class="buttonType1"
-                        >LÊN KẾ HOẠCH CHO THÀNH CÔNG</a
-                    >
-                </div>
-            </section>
-            <section class="adminCombine">
-                <div class="container">
-                    <p class="heading t1 uppercase">quản trị tích hợp ngay</p>
-                    <a href="#!" class="buttonType1">Gặp Chuyên gia</a>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="container">
-                <div class="logoBox">
-                    <img src="./assest/img/BescoLogo.png" alt="" />
-                </div>
-                <div class="boxContent">
-                    <ul class="itemCol">
-                        <li>
-                            <p>
-                                50 Cuu Long Str.,Ward 2, Tan Binh Dist.,
-                            </p>
-                        </li>
-                        <li><p>HCM City, Vietnam</p></li>
-                        <li>
-                            <a href="tel:028 6281 5988"
-                                >028 6281 5988</a
-                            >
-                        </li>
-                        <li>
-                            <a href="mailto:Canh@besco.vn"
-                                >Canh@besco.vn</a
-                            >
-                        </li>
-                        <li>
-                            <div class="socialsBox">
-                                <a href="#!" class="social">
-                                    <img
-                                        src="./assest/img/logo_in.svg"
-                                        alt=""
-                                    />
-                                </a>
-                                <a href="#!" class="social">
-                                    <img
-                                        src="./assest/img/logo_twitter.svg"
-                                        alt=""
-                                    />
-                                </a>
-                                <a href="#!" class="social">
-                                    <img
-                                        src="./assest/img/logo_ytb.svg"
-                                        alt=""
-                                    />
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="itemCol">
-                        <li><a href="#!">Trang chủ</a></li>
-                        <li><a href="#!">Sản phẩm</a></li>
-                        <li><a href="#!">Giải pháp</a></li>
-                    </ul>
-                    <ul class="itemCol">
-                        <li><a href="#!">Bảng giá</a></li>
-                        <li><a href="#!">Nguồn lực</a></li>
-                        <li><a href="#!">Blog</a></li>
-                    </ul>
-                    <ul class="itemCol">
-                        <li><a href="#!">Về chúng tôi</a></li>
-                        <li><a href="#!">NEWS</a></li>
-                        <li><a href="#!">CAREERS</a></li>
-                    </ul>
-                </div>
-                <div class="copyright">
-                    <p class="desc">Copyright 1994-2003 MISA JSC</p>
-                    <a href="#!" class="desc privacy">Thoả thuận sử dụng</a>
-                    <a href="#!" class="desc privacy">Chính sách bảo mật</a>
-                </div>
-            </div>
-        </footer>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        <script src="./assest/js/app.js"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assest/js/app.js"></script>
+  </body>
 </html>
