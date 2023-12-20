@@ -269,7 +269,7 @@
 }
 
 .feedback .boxContent {
-    margin-top: 48px;
+  margin-top: 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -302,17 +302,83 @@
   margin-bottom: 8px;
 }
 
-#companyPage.phuclong .StoryBannerTop {
-    display: flex !important;
+.phuclong .StoryBannerTop {
+  display: flex !important;
+  flex-direction: row-reverse;
+}
+
+.phuclong .StoryBannerTop .bannerImg {
+  mix-blend-mode: unset;
+}
+
+.phuclong .StoryBannerTop .content {
+  left: 90%;
+}
+
+.phuclong .rowGiapPhap {
+  width: 100%;
+  display: flex;
+}
+
+.phuclong .rowGiapPhap.reverse {
     flex-direction: row-reverse;
 }
 
-#companyPage.phuclong .StoryBannerTop .bannerImg {
-    mix-blend-mode: unset;
+.phuclong .rowGiapPhap .leftSide,
+.phuclong .rowGiapPhap .rightSide {
+  width: 50%;
 }
 
-#companyPage.phuclong .StoryBannerTop .content {
-    left: 90%;
+.phuclong .rowGiapPhap .leftSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phuclong .rowGiapPhap .leftSide img {
+  width: 80%;
+}
+
+.phuclong .rowGiapPhap .rightSide {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.phuclong .rowGiapPhap .rightSide h3 {
+  color: #002559;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.phuclong .rowGiapPhap .rightSide h4 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 12px;
+}
+
+.phuclong .rowGiapPhap ol li {
+  list-style-position: inside;
+  list-style-type: decimal;
+  line-height: 24px;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.phuclong .feedback .boxContent {
+    flex-direction: row-reverse;
+}
+
+.phuclong .feedback .boxContent .leftSide {
+    width: 30%;
+}
+
+.phuclong .feedback .boxContent .rightSide {
+    width: 70%;
+    text-align: end;
 }
 
 @media screen and (max-width: 1200px) {
@@ -335,7 +401,7 @@
 @media screen and (max-width: 768px) {
   .StoryBannerTop {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     height: 600px;
   }
 
@@ -344,7 +410,7 @@
   }
 
   .StoryBannerTop .content {
-    top: -25%;
+    top: -25% !important;
   }
 
   .StoryBannerTop .leftSide,
@@ -413,6 +479,32 @@
 
   .feedback .boxContent .rightSide {
     width: 100%;
+  }
+
+  .phuclong .StoryBannerTop .content {
+    left: 50%;
+  }
+
+  .phuclong .rowGiapPhap {
+    flex-direction: column !important;
+    gap: 10px;
+  }
+  .phuclong .rowGiapPhap {
+    margin-bottom: 50px;
+  }
+
+  .phuclong .rowGiapPhap .leftSide,
+  .phuclong .rowGiapPhap .rightSide {
+    width: 100% !important;
+  }
+
+  .phuclong .feedback .boxContent {
+    flex-direction: column;
+  }
+
+  .phuclong .feedback .boxContent .rightSide {
+    width: 100%;
+    text-align: center;
   }
 }
 
