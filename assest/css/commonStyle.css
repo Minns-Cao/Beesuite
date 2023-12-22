@@ -12,6 +12,7 @@
         #00143f 355.09deg,
         #005091 385.16deg
     );
+    
 }
 a {
     text-decoration: none;
@@ -22,7 +23,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
 }
 /* ===commom== */
 .buttonType1 {

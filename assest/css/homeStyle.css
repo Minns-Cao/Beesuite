@@ -5,8 +5,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--bg-color);
+    
+    background-position: 50px 50px;
 }
+
+#homepage .backgroundGradient {
+    /* background: conic-gradient(from 83.1deg at 25.07% 53.09%, #00143F -4.91deg, #005091 25.16deg, #00143F 355.09deg, #005091 385.16deg); */
+    background: conic-gradient(from 83.1deg at 25.07% 53.09%, #00143F -4.91deg, #005091 25.16deg, #00143F 355.09deg, #005091 385.16deg);
+
+}
+
+#homepage .bannerTop .swiper-pagination {
+    margin-bottom: 27px;
+}
+
+#homepage .bannerTop .swiper-pagination-bullet-active { 
+    background-color: #06DAFF;
+}
+
 
 #homepage .bannerTop .sildeItem {
     padding: 115px 0;
@@ -18,7 +34,15 @@
     width: 50%;
 }
 
+#homepage .bannerTop .sildeItem.padding .leftSide {
+    padding-right: 50px;
+}
+#homepage .bannerTop .sildeItem.padding .rightSide {
+    padding-left: 50px;
+}
+
 #homepage .bannerTop .sildeItem .rightSide {
+    
     display: flex;
     align-items: center;
 }
@@ -29,6 +53,7 @@
 }
 
 #homepage .bannerTop .sildeItem .leftSide {
+   
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -96,6 +121,8 @@
     height: 24px;
     object-fit: contain;
 }
+
+
 
 @keyframes loop {
     0% {
@@ -245,15 +272,19 @@
 
 #homepage .feedback .feedbackSilde .boxContent {
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 30% 65%;
     align-items: center;
-    gap: 40px;
+    gap: 62px;
 }
 
 #homepage .feedback .feedbackSilde .boxContent .leftSide {
     width: 100%;
     aspect-ratio: 3/4;
     border-radius: 8px 0;
+}
+
+#homepage .feedback .feedbackSilde .job {
+    margin: 8px 0;
 }
 
 #homepage .feedback .feedbackSilde .boxContent .leftSide img {
