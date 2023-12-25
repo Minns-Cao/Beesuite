@@ -40,11 +40,11 @@ try {
             },
             640: {
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 78,
             },
             1200: {
                 slidesPerView: 3,
-                spaceBetween: 20,
+                spaceBetween: 78,
             },
         },
         loop: true,

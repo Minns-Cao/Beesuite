@@ -5,14 +5,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    background-position: 50px 50px;
+    background-image: url(../img/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -80px 0;
 }
 
-#homepage .backgroundGradient {
-    /* background: conic-gradient(from 83.1deg at 25.07% 53.09%, #00143F -4.91deg, #005091 25.16deg, #00143F 355.09deg, #005091 385.16deg); */
-    background: conic-gradient(from 83.1deg at 25.07% 53.09%, #00143F -4.91deg, #005091 25.16deg, #00143F 355.09deg, #005091 385.16deg);
 
+#homepage .backgroundGradient {
+   
 }
 
 #homepage .bannerTop .swiper-pagination {
@@ -27,6 +28,7 @@
 #homepage .bannerTop .sildeItem {
     padding: 115px 0;
     display: flex;
+    
 }
 
 #homepage .bannerTop .sildeItem .leftSide,
@@ -335,6 +337,7 @@
 }
 
 #homepage .story .buttonType1 {
+    min-width: 344px;
     margin-top: 78px;
 }
 
@@ -379,6 +382,7 @@
 }
 
 #homepage .adminCombine .buttonType1 {
+    min-width: 344px;
     margin-top: 30px;
 }
 
@@ -408,7 +412,12 @@
 }
 
 @media screen and (max-width: 768px) {
-    
+    #homepage .bannerTop .sildeItem.padding .leftSide {
+        padding-right: 0px;
+    }
+    #homepage .bannerTop .sildeItem.padding .rightSide {
+        padding-left: 0px;
+    }
     #homepage .effective .boxContent {
         grid-template-columns: 70%;
         justify-content: center;
