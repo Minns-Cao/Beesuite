@@ -5,15 +5,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../img/bg1.png);
-    background-repeat: no-repeat;
+    background: url(../img/bg1.png) no-repeat;
     background-size: cover;
     background-position: -80px 0;
-}
-
-
-#homepage .backgroundGradient {
-   
 }
 
 #homepage .bannerTop .swiper-pagination {
