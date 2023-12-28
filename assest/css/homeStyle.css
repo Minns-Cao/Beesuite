@@ -183,15 +183,14 @@
 #homepage .effective .boxContent .item-title {
     width: 100%;
     position: relative;
-    color: #fff;
     font-family: "Moulpali";
-    font-size: 166.32px;
+    font-size: 100px;
     font-style: normal;
     font-weight: 400;
     text-align: center;
-    line-height: 166.32px;
-    padding: 100px 0;
+    line-height: 39px;
     margin: 40px 0;
+    color: #FFCF01;
 }
 
 #homepage .effective .boxContent .item-title .bg-img {
@@ -204,17 +203,22 @@
 #homepage .effective .boxContent .item-title .label {
     width: 130%;
     position: absolute;
-    top: 70%;
-    left: 50%;
+    top: 65%;
+    left:80%;
     transform: translate(-50%, -50%);
     font-size: 40px;
+    font-family: Moulpali;
+}
+
+#homepage .effective .boxContent .item .desc {
+    text-align: left;
 }
 
 #homepage .effective .boxContent .item-title .add {
-    font-size: 133.056px;
+    font-size: 76px;
 }
 #homepage .effective .boxContent .item-title .percent {
-    font-size: 49.896px;
+    font-size: 40px;
 }
 
 #homepage .effective .boxContent .heading.t2 {
@@ -222,7 +226,7 @@
 }
 
 #homepage .effective .boxContent .item:nth-child(2) .item-title {
-    transform: scale(0.7);
+    transform: scale(1);
 }
 #homepage .effective .boxContent .item:nth-child(3) .item-title .bg-img {
     left: 60%;
