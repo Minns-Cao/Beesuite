@@ -518,13 +518,17 @@
     }
 
     #homepage .story .buttonType1{
+        min-width: unset;
+        width: 100%;
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     #homepage .adminCombine .buttonType1 {
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 50px;
+        min-width: unset;
+        width: 100%;
     }
 
 

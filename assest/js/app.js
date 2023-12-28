@@ -34,7 +34,7 @@ try {
         slidesPerView: 3,
         spaceBetween: 74,
         breakpoints: {
-            320: {
+            120: {
                 slidesPerView: 1,
                 spaceBetween: 20,
             },
