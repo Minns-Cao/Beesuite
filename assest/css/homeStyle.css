@@ -427,6 +427,7 @@
         grid-template-columns: 70%;
         justify-content: center;
         gap: 40px;
+        
     }
     #homepage .bannerTop .sildeItem .leftSide .subtitle {
         margin: 0 5px;
@@ -463,6 +464,8 @@
 
     #homepage .feedback .feedbackSilde .boxContent {
         grid-template-columns: 1fr;
+        padding: unset;
+        padding-bottom: 40px; 
     }
 
     #homepage .feedback .feedbackSilde .boxContent .rightSide {
@@ -514,10 +517,17 @@
         margin: 0 auto;
     }
 
+    #homepage .story .buttonType1{
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
     #homepage .adminCombine .buttonType1 {
         margin: 0 auto;
         margin-top: 30px;
     }
+
+
 
     
 }
