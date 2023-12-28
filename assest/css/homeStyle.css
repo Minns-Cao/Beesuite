@@ -485,6 +485,7 @@
 
     #homepage .heading.t1 {
         text-align: center;
+        line-height: 56px;
     }
 
     #homepage .bannerTop .sildeItem {
