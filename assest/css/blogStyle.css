@@ -22,6 +22,7 @@
 .StoryBannerTop .desc a {
   color: #fff;
   font-weight: 700;
+  text-decoration: underline;
 }
 
 .StoryBannerTop .content {
@@ -58,9 +59,9 @@
 }
 
 #contact .StoryBannerTop .frame {
-  left: 73.5%;
+  left: 71%;
   height: 100%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 /* selectBox */
