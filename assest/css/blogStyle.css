@@ -58,6 +58,10 @@
   object-fit: cover;
 }
 
+#companyPage .StoryBannerTop .content .heading {
+  width: 530px;
+}
+
 #contact .StoryBannerTop .frame {
   left: 71%;
   height: 100%;
