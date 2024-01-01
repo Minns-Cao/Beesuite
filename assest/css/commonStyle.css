@@ -363,7 +363,7 @@ footer .copyright .privacy {
     "confirm1Box mesBox"
     "confirm2Box mesBox";
     grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
+    column-gap: 120px;
 }
 
 .formContact .inputBox {
