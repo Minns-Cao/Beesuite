@@ -89,6 +89,10 @@
   color: #fff;
 }
 
+.selectBox .select select option {
+  color: #000;
+}
+
 .selectBox .select .dropdownIcon {
   position: absolute;
   top: 50%;
@@ -137,7 +141,6 @@
 .news .buttonBox {
   margin-top: 48px;
   display: flex;
-
   justify-content: space-between;
 }
 
@@ -147,8 +150,16 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  background: transparent;
   padding: 8px 16px;
   color: var(--Blue-text);
+  color: hsla(215, 72%, 13%, 0.5);
+  transition: all 0.2s ease;
+}
+
+.news .prevPage:hover,
+.news .nextPage:hover {
+  color: hsla(215, 72%, 13%, 1);
 }
 
 #companyPage .details {
@@ -395,21 +406,23 @@
   #companyPage .newsBox .company-button-prev {
     display: none;
   }
+  .selectBox .boxContent {
+    grid-template-columns: 1fr 1fr;
+  }
+  .selectBox .select select {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .formContact .rowForm {
     gap: 20px;
   }
-}
-
-@media screen and (max-width: 768px) {
   .StoryBannerTop {
     display: flex;
     flex-direction: column !important;
     height: 600px;
   }
-
   #contact .StoryBannerTop .frame {
     opacity: 0.4;
   }
@@ -429,13 +442,12 @@
   .StoryBannerTop .content .desc {
     width: 100%;
   }
-  .selectBox .boxContent {
-    grid-template-columns: 1fr 1fr;
-  }
+}
 
-  .selectBox .select select {
-    width: 100%;
-  }
+@media screen and (max-width: 768px) {
+
+
+
 
   .news .itemList {
     grid-template-columns: 1fr 1fr;

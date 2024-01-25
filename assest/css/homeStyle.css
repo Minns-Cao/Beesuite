@@ -378,11 +378,8 @@
 /* adminCombine */
 
 #homepage .adminCombine {
-    background: radial-gradient(
-        1212.9% 47.07% at 54.17% 70.24%,
-        #01143f 9.76%,
-        #014c8c 90.42%
-    );
+    background: radial-gradient(45.83% 1212.87% at 54.17% 70.24%, #01143F 9.76%, #014C8C 90.42%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
     padding: 72px 0;
 }
 

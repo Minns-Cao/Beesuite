@@ -1,341 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <!-- bootstrap -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-        />
-        <!-- Reset CSS -->
-        <link rel="stylesheet" href="./assest/css/reset.css" />
-        <!-- swiperJS -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-        />
-        <!-- icon -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./assest/css/reset.css" />
+    <!-- swiperJS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-        <script src="https://unpkg.com/scrollreveal@4"></script>
-        <!-- commonStyle CSS -->
-        <link rel="stylesheet" href="./assest/css/commonStyle.css" />
-        <!-- Style CSS -->
-        <link rel="stylesheet" href="./assest/css/blogStyle.css" />
-    </head>
-    <body id="contact">
-        <header class="header">
-            <div class="container headerBox">
-                <a class="logoBox" href="/">
-                    <img src="./assest/img/logo.svg" alt="" />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <!-- commonStyle CSS -->
+    <link rel="stylesheet" href="./assest/css/commonStyle.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assest/css/blogStyle.css" />
+  </head>
+  <body id="contact">
+    <header class="header">
+      <div class="container headerBox">
+        <a class="logoBox" href="/">
+          <img src="./assest/img/logo.svg" alt="" />
+        </a>
+
+        <ul class="nav">
+          <li class="nav-item desc">
+            <a href="#" class="nav-link desc active" aria-current="page"
+              >Sản phẩm</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link desc">Giải pháp</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link desc">Bảng giá</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link desc">Nguồn lực</a>
+          </li>
+          <li class="nav-item">
+            <a href="./blog.html" class="nav-link desc">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="./company.html" class="nav-link desc">Công ty</a>
+          </li>
+          <li class="nav-button">
+            <a href="./contact.html" class="buttonType1 buttonNav">Liên hệ</a>
+          </li>
+        </ul>
+        <div class="iconNavMb">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="mbNav">
+        <div class="line1">
+          <div class="socials">
+            <p class="lang">vi</p>
+            <div class="iconBox">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="iconBox">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="iconBox">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+          <div class="btnClose">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 384 512"
+            >
+              <path
+                d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="line2">
+          <a href="#!">Sản phẩm</a>
+          <a href="#!">Giải pháp</a>
+          <a href="#!">Bảng giá</a>
+          <a href="#!">Nguồn lực</a>
+
+          <a href="./blog.html" class="nav-link desc">Blog</a>
+
+          <a href="./company.html" class="nav-link desc">Công ty</a>
+
+          <a
+            href="./contact.html"
+            style="margin: 0 auto"
+            class="buttonType1 buttonNav"
+            >Liên hệ</a
+          >
+        </div>
+      </div>
+      <div class="notiBox">
+        <div class="container">
+          <div class="boxContent">
+            Cám ơn bạn đã liên hệ BeeSuite. Chuyên gia BEESUITE sẽ liên hệ bạn
+            ngay trong 24h tới.
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="StoryBannerTop relative">
+        <div class="leftSide"></div>
+        <div class="rightSide">
+          <img src="./assest/img/banner2.png" alt="" class="bannerImg" />
+        </div>
+        <div class="content container">
+          <p class="desc t2 text-shadow">
+            Chúng tôi cam kết mang đến giải pháp toàn diện & dịch vụ chất lượng
+            đáp ứng đúng nhu cầu kinh doanh riêng của doanh nghiệp. Đội chuyên
+            gia “Bee" luôn sẵn sàng mọi lúc mọi nơi khi cần.
+          </p>
+          <p class="desc t2 text-shadow">
+            Gọi
+            <a href="tel:+84 123 123 1234"> +84 123 123 1234</a> hay điền thông
+            tin bên dưới để bắt đầu
+          </p>
+        </div>
+        <div class="frame">
+          <img src="./assest/img/Frame7.png" alt="" />
+        </div>
+      </section>
+      <section class="contactProfessor">
+        <div class="container">
+          <p class="heading t1 uppercase">
+            Đăng ký demo trải nghiệm
+            <span class="yellow">BEE</span>SUITE
+          </p>
+          <p class="desc labelHeaing">
+            BEESUITE cần một vài thông tin dưới đây để kết nối bạn đến đúng
+            chuyên gia
+          </p>
+          <form class="formContact" novalidate>
+            <div class="inputBox nameBox">
+              <label for="name" class="form-label">Tên của bạn *</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nhập tên"
+                id="name"
+              />
+            </div>
+            <div class="inputBox companyBox">
+              <label for="company" class="form-label">Công ty *</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nhập tên công ty"
+                id="company"
+              />
+            </div>
+
+            <div class="inputBox phoneBox">
+              <label for="phone" class="form-label">Số điện thoại *</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nhập số điện thoại"
+                id="phone"
+              />
+            </div>
+            <div class="inputBox majorBox">
+              <label for="major" class="form-label">Ngành/ lĩnh vực</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nhập ngành/ lĩnh vực của công ty bạn"
+                id="major"
+              />
+            </div>
+            <div class="inputBox emailBox">
+              <label for="email" class="form-label">Email *</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nhập email"
+                id="email"
+              />
+            </div>
+
+            <div class="form-check confirm1Box">
+              <input type="checkbox" class="form-check-input" id="confirm1" />
+              <label class="form-check-label" for="confirm1"
+                >Tôi xác nhận BEESUITE có thể sử dụng những thông tin trên đây
+                để liên hệ kết nối với tôi*</label
+              >
+            </div>
+            <div class="form-check confirm2Box">
+              <input type="checkbox" class="form-check-input" id="confirm2" />
+              <label class="form-check-label" for="confirm2"
+                >Tôi muốn nhận những thông tin cập nhật mới nhất về sản phẩm,
+                giải pháp, xu hướng thị trường từ BEESUITE</label
+              >
+            </div>
+
+            <div class="inputBox mesBox">
+              <label for="message" class="form-label"
+                >Beesuite có thể giúp gì cho bạn</label
+              >
+              <textarea
+                type="text"
+                class="form-control"
+                placeholder="Nhập câu hỏi/ chia sẻ mà bạn cần chuyên gia tư vấn"
+                id="message"
+                rows="9"
+              ></textarea>
+            </div>
+            <button class="buttonType1" type="submit">Gửi</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="logoBox">
+          <img src="./assest/img/BescoLogo.png" alt="" />
+        </div>
+        <div class="boxContent">
+          <ul class="itemCol">
+            <li>
+              <p>50 Cuu Long Str.,Ward 2, Tan Binh Dist.,</p>
+            </li>
+            <li><p>HCM City, Vietnam</p></li>
+            <li>
+              <a href="tel:028 6281 5988">028 6281 5988</a>
+            </li>
+            <li>
+              <a href="mailto:Canh@besco.vn">Canh@besco.vn</a>
+            </li>
+            <li>
+              <div class="socialsBox">
+                <a href="#!" class="social">
+                  <img src="./assest/img/logo_in.svg" alt="" />
                 </a>
-
-                <ul class="nav">
-                    <li class="nav-item desc">
-                        <a
-                            href="#"
-                            class="nav-link desc active"
-                            aria-current="page"
-                            >Sản phẩm</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link desc">Giải pháp</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link desc">Bảng giá</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link desc">Nguồn lực</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./blog.html" class="nav-link desc">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./company.html" class="nav-link desc"
-                            >Công ty</a
-                        >
-                    </li>
-                    <li class="nav-button">
-                        <a href="./contact.html" class="buttonType1 buttonNav"
-                            >Liên hệ</a
-                        >
-                    </li>
-                </ul>
-                <div class="iconNavMb">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512"
-                    >
-                        <path
-                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-                        />
-                    </svg>
-                </div>
-            </div>
-            <div class="mbNav">
-                <div class="line1">
-                    <div class="socials">
-                        <p class="lang">vi</p>
-                        <div class="iconBox">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-                        <div class="iconBox">
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                        <div class="iconBox">
-                            <i class="fa-brands fa-youtube"></i>
-                        </div>
-                    </div>
-                    <div class="btnClose">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            height="1em"
-                            viewBox="0 0 384 512"
-                        >
-                            <path
-                                d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
-                            />
-                        </svg>
-                    </div>
-                </div>
-                <div class="line2">
-                    <a href="#!">Sản phẩm</a>
-                    <a href="#!">Giải pháp</a>
-                    <a href="#!">Bảng giá</a>
-                    <a href="#!">Nguồn lực</a>
-
-                    <a href="./blog.html" class="nav-link desc">Blog</a>
-
-                    <a href="./company.html" class="nav-link desc">Công ty</a>
-
-                    <a
-                        href="./contact.html"
-                        style="margin: 0 auto"
-                        class="buttonType1 buttonNav"
-                        >Liên hệ</a
-                    >
-                </div>
-            </div>
-            <div class="notiBox">
-                <div class="container">
-                    <div class="boxContent">
-                        Cám ơn bạn đã liên hệ BeeSuite. Chuyên gia BEESUITE sẽ
-                        liên hệ bạn ngay trong 24h tới.
-                    </div>
-                </div>
-            </div>
-        </header>
-        <main>
-            <section class="StoryBannerTop relative">
-                <div class="leftSide"></div>
-                <div class="rightSide">
-                    <img
-                        src="./assest/img/banner2.png"
-                        alt=""
-                        class="bannerImg"
-                    />
-                </div>
-                <div class="content container">
-                    <p class="desc t2 text-shadow">
-                        Chúng tôi cam kết mang đến giải pháp toàn diện & dịch vụ
-                        chất lượng đáp ứng đúng nhu cầu kinh doanh riêng của
-                        doanh nghiệp. Đội chuyên gia “Bee" luôn sẵn sàng mọi lúc
-                        mọi nơi khi cần.
-                    </p>
-                    <p class="desc t2 text-shadow">
-                        Gọi
-                        <a href="tel:+84 123 123 1234"> +84 123 123 1234</a> hay
-                        điền thông tin bên dưới để bắt đầu
-                    </p>
-                </div>
-                <div class="frame">
-                    <img src="./assest/img/Frame7.png" alt="" />
-                </div>
-            </section>
-            <section class="contactProfessor">
-                <div class="container">
-                    <p class="heading t1 uppercase">
-                        Đăng ký demo trải nghiệm
-                        <span class="yellow">BEE</span>SUITE
-                    </p>
-                    <p class="desc labelHeaing">
-                        BEESUITE cần một vài thông tin dưới đây để kết nối bạn
-                        đến đúng chuyên gia
-                    </p>
-                    <form class="formContact" novalidate>
-                        <div class="inputBox nameBox">
-                            <label for="name" class="form-label"
-                                >Tên của bạn *</label
-                            >
-                            <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Nhập tên"
-                                id="name"
-                            />
-                        </div>
-                        <div class="inputBox companyBox">
-                            <label for="company" class="form-label"
-                                >Công ty *</label
-                            >
-                            <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Nhập tên công ty"
-                                id="company"
-                            />
-                        </div>
-
-                        <div class="inputBox phoneBox">
-                            <label for="phone" class="form-label"
-                                >Số điện thoại *</label
-                            >
-                            <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Nhập số điện thoại"
-                                id="phone"
-                            />
-                        </div>
-                        <div class="inputBox majorBox">
-                            <label for="major" class="form-label"
-                                >Ngành/ lĩnh vực</label
-                            >
-                            <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Nhập ngành/ lĩnh vực của công ty bạn"
-                                id="major"
-                            />
-                        </div>
-                        <div class="inputBox emailBox">
-                            <label for="email" class="form-label"
-                                >Email *</label
-                            >
-                            <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Nhập email"
-                                id="email"
-                            />
-                        </div>
-
-                        <div class="form-check confirm1Box">
-                            <input
-                                type="checkbox"
-                                class="form-check-input"
-                                id="confirm1"
-                            />
-                            <label class="form-check-label" for="confirm1"
-                                >Tôi xác nhận BEESUITE có thể sử dụng những
-                                thông tin trên đây để liên hệ kết nối với
-                                tôi*</label
-                            >
-                        </div>
-                        <div class="form-check confirm2Box">
-                            <input
-                                type="checkbox"
-                                class="form-check-input"
-                                id="confirm2"
-                            />
-                            <label class="form-check-label" for="confirm2"
-                                >Tôi muốn nhận những thông tin cập nhật mới nhất
-                                về sản phẩm, giải pháp, xu hướng thị trường từ
-                                BEESUITE</label
-                            >
-                        </div>
-
-                        <div class="inputBox mesBox">
-                            <label for="message" class="form-label"
-                                >Beesuite có thể giúp gì cho bạn</label
-                            >
-                            <textarea
-                                type="text"
-                                class="form-control"
-                                placeholder="Nhập câu hỏi/ chia sẻ mà bạn cần chuyên gia tư vấn"
-                                id="message"
-                                rows="9"
-                            ></textarea>
-                        </div>
-                        <button class="buttonType1" type="submit">Gửi</button>
-                    </form>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="container">
-                <div class="logoBox">
-                    <img src="./assest/img/BescoLogo.png" alt="" />
-                </div>
-                <div class="boxContent">
-                    <ul class="itemCol">
-                        <li>
-                            <p>50 Cuu Long Str.,Ward 2, Tan Binh Dist.,</p>
-                        </li>
-                        <li><p>HCM City, Vietnam</p></li>
-                        <li>
-                            <a href="tel:028 6281 5988">028 6281 5988</a>
-                        </li>
-                        <li>
-                            <a href="mailto:Canh@besco.vn">Canh@besco.vn</a>
-                        </li>
-                        <li>
-                            <div class="socialsBox">
-                                <a href="#!" class="social">
-                                    <img
-                                        src="./assest/img/logo_in.svg"
-                                        alt=""
-                                    />
-                                </a>
-                                <a href="#!" class="social">
-                                    <img
-                                        src="./assest/img/logo_twitter.svg"
-                                        alt=""
-                                    />
-                                </a>
-                                <a href="#!" class="social">
-                                    <img
-                                        src="./assest/img/logo_ytb.svg"
-                                        alt=""
-                                    />
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="itemCol">
-                        <li><a href="#!">Trang chủ</a></li>
-                        <li><a href="#!">Sản phẩm</a></li>
-                        <li><a href="#!">Giải pháp</a></li>
-                    </ul>
-                    <ul class="itemCol">
-                        <li><a href="#!">Bảng giá</a></li>
-                        <li><a href="#!">Nguồn lực</a></li>
-                        <li><a href="#!">Blog</a></li>
-                    </ul>
-                    <ul class="itemCol">
-                        <li><a href="#!">Về chúng tôi</a></li>
-                        <li><a href="#!">NEWS</a></li>
-                        <li><a href="#!">CAREERS</a></li>
-                    </ul>
-                </div>
-                <div class="copyright">
-                    <p class="desc">Copyright 1994-2003 MISA JSC</p>
-                    <a href="#!" class="desc privacy">Thoả thuận sử dụng</a>
-                    <a href="#!" class="desc privacy">Chính sách bảo mật</a>
-                </div>
-            </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        <script src="./assest/js/app.js"></script>
-    </body>
+                <a href="#!" class="social">
+                  <img src="./assest/img/logo_twitter.svg" alt="" />
+                </a>
+                <a href="#!" class="social">
+                  <img src="./assest/img/logo_ytb.svg" alt="" />
+                </a>
+              </div>
+            </li>
+          </ul>
+          <ul class="itemCol">
+            <li><a href="#!">Trang chủ</a></li>
+            <li><a href="#!">Sản phẩm</a></li>
+            <li><a href="#!">Giải pháp</a></li>
+          </ul>
+          <ul class="itemCol">
+            <li><a href="#!">Bảng giá</a></li>
+            <li><a href="#!">Nguồn lực</a></li>
+            <li><a href="#!">Blog</a></li>
+          </ul>
+          <ul class="itemCol">
+            <li><a href="#!">Về chúng tôi</a></li>
+            <li><a href="#!">NEWS</a></li>
+            <li><a href="#!">CAREERS</a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p class="desc">Copyright 1994-2003 MISA JSC</p>
+          <a href="#!" class="desc privacy">Thoả thuận sử dụng</a>
+          <a href="#!" class="desc privacy">Chính sách bảo mật</a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assest/js/app.js"></script>
+  </body>
 </html>

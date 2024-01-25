@@ -10,13 +10,12 @@ try {
         },
     });
 } catch (error) {
-    console.log(error);
+    
 }
 
 try {
     var swiperfeedback = new Swiper(".feedback", {
         loop: true,
-
         pagination: {
             el: ".feedbackPagination",
         },
@@ -26,7 +25,7 @@ try {
         },
     });
 } catch (error) {
-    console.log(error);
+    
 }
 
 try {
@@ -46,8 +45,7 @@ try {
                 slidesPerView: 3,
                 spaceBetween: 78,
             },
-        },
-        loop: true,
+        },       
         pagination: {
             el: ".storyPagination",
         },
@@ -55,6 +53,7 @@ try {
             nextEl: ".story-button-next",
             prevEl: ".story-button-prev",
         },
+        loop: true,
         autoplay: {
             delay: 5000, // Thời gian mỗi slide hiển thị trước khi chuyển slide tiếp theo (milliseconds)
             disableOnInteraction: false, // Không tắt autoplay khi người dùng tương tác với slider
@@ -65,7 +64,7 @@ try {
 }
 try {
 } catch (error) {
-    console.log(error);
+    
 }
 try {
     var swiperfeedback = new Swiper(".newsCompanySilde", {
@@ -96,11 +95,11 @@ try {
         },
     });
 } catch (error) {
-    console.log(error);
+    
 }
 try {
 } catch (error) {
-    console.log(error);
+    
 }
 
 var swiperNewsSlider = new Swiper(".newsSlider", {
