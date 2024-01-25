@@ -404,3 +404,29 @@ window.addEventListener("scroll", () => {
         );
     }
 });
+
+//Home chữ chạy
+let runListChannel = () => {
+    let listChannel = document.querySelectorAll("#homepage .listChannel .channel") || "";
+    let arrayListChannel = [];
+    listChannel.forEach((elm)=> {
+        arrayListChannel.push(elm.textContent)
+    });
+    arrayListChannel.unshift(arrayListChannel[arrayListChannel.length - 1]);
+    arrayListChannel.pop(arrayListChannel[0]);
+
+    let template = `
+        <li class="channel active">${arrayListChannel[0]}</li>
+        <li class="channel">${arrayListChannel[1]}</li>
+        <li class="channel">${arrayListChannel[2]}</li>
+        <li class="channel">${arrayListChannel[3]}</li>
+        <li class="channel">${arrayListChannel[4]}</li>
+        <li class="channel">${arrayListChannel[5]}</li>
+    `
+    document.querySelector("#homepage .listChannel").innerHTML = template;
+}
+
+setInterval(()=>{
+    runListChannel();
+}, 4000)
+
