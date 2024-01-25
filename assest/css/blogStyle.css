@@ -209,12 +209,23 @@
 }
 
 #companyPage .newsBox .item .thumb {
+
   width: 100%;
 }
 
 #companyPage .newsBox .item .thumb img {
   width: 100%;
   object-fit: cover;
+}
+
+#companyPage .newsBox .item .subtitle{
+  margin-top: 40px;
+}
+
+#companyPage .newsBox .item .date {
+  color: #97999C;
+
+
 }
 
 #companyPage .newsBox .company-button-next,
